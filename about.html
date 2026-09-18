@@ -1,0 +1,694 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Success Coaching</title>
+    <link rel="stylesheet" href="./assets/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+       
+        
+        .about-title {
+  color: #000;
+  text-align: left;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.5rem, 2.8vw, 2.5rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 2px;
+  z-index: 13;
+  padding-left: 0.3em;
+}
+
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+       <!-- Header / Navigation -->
+    <header class="navbar bg-[#9FD2E1] flex flex-col md:flex-row justify-between items-center py-4">
+        <div class="logo flex items-center gap-2 mb-4 md:mb-0">
+            <a href="index.html" class="w-[clamp(80px,10vw,112px)] h-auto">
+                <img src="./assets/logo.png" alt="Logo">
+            </a>
+        </div>
+        
+        <nav class="flex flex-wrap justify-center items-center gap-6 md:gap-12 text-white text-sm font-semibold mb-4 md:mb-0">
+            <a href="about.html" class="navbar-text hover:text-gray-200 transition">About</a>
+            <a href="what-is-coaching.html" class="navbar-text hover:text-gray-200 transition">What is Coaching?</a>
+            
+            <!-- Services Dropdown Container -->
+            <div class="relative group">
+                <a href="services.html" class="navbar-text hover:text-gray-200 transition flex items-center gap-1 py-2">
+                    Services
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3 h-3 mt-0.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </a>
+                
+                <div class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 top-full w-56 bg-white rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 flex flex-col overflow-hidden border border-gray-100">
+                    <a href="individual-coaching.html" class="block px-5 py-3 text-sm text-gray-700 font-medium hover:bg-gray-50 hover:text-[#1c7ced] transition-colors border-b border-gray-100">
+                        Individual Coaching
+                    </a>
+                    <a href="college-readiness-programs.html" class="block px-5 py-3 text-sm text-gray-700 font-medium hover:bg-gray-50 hover:text-[#1c7ced] transition-colors">
+                        College Readiness Programs
+                    </a>
+                </div>
+            </div>
+
+            <a href="book.html" class="navbar-text hover:text-gray-200 transition">Book</a>
+            <a href="speaking.html" class="navbar-text hover:text-gray-200 transition">Speaking</a>
+            
+            <!-- Resources Dropdown Container -->
+            <div class="relative group">
+                <a href="resources.html" class="navbar-text hover:text-gray-200 transition flex items-center gap-1 py-2">
+                    Resources
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3 h-3 mt-0.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </a>
+                
+                <div class="absolute left-1/2 -translate-x-1/2 md:left-auto md:right-0 md:translate-x-0 top-full w-48 bg-white rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 flex flex-col overflow-hidden border border-gray-100">
+                    <a href="blog.html" class="block px-5 py-3 text-sm text-gray-700 font-medium hover:bg-gray-50 hover:text-[#1c7ced] transition-colors">
+                        News & Insights (Blog)
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <button class="bg-[#7ca9d6] text-white px-5 py-2.5 rounded-md font-medium text-sm hover:bg-[#6894c0] transition">
+            Schedule a Consultation
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-8 py-16 md:py-24 flex flex-col lg:flex-row items-center gap-16 relative ">
+        <div class="flex-1  z-10 relative"> <!-- Added 'relative' here -->
+    
+    
+    <h1 class="about-title relative"> <!-- Added 'relative' here -->
+        <!-- Pulled above the SVG -->
+        <span class="relative z-20">A passion for</span><br>
+        
+        <!-- Left static so the SVG (z-10) loops OVER it -->
+        <span>helping college</span><br>
+        
+        <!-- Pulled above the SVG (replaced inline style with Tailwind z-20) -->
+        <span class="relative z-20">students succeed</span>
+    </h1>
+    
+    <!-- Pulled above the SVG -->
+    <p class="text-black-400 text-lg md:text-xl font-medium pt-4 relative z-20 pl-2.5" style="width: 90%;">
+        College Success Coach, Educational Consultant, and Author of <i>Thinking Critically in College: The Essential Handbook for Student Success.</i> Scholar of Jewish Ethics
+    </p>
+    
+    <!-- Pulled above the SVG -->
+    <div class="flex flex-wrap gap-4 pt-4 relative z-20">
+        <button class="bg-[#b38a44] text-white px-6 py-3 rounded-md font-medium hover:bg-[#9a7538] transition">Schedule a Consultation</button>
+        <button class="bg-[#b38a44] text-white px-6 py-3 rounded-md font-medium hover:bg-[#9a7538] transition">Schedule a Consultation</button>
+    </div>
+</div>
+        <div class="flex-1 relative w-full flex justify-center lg:justify-end z-10">
+
+   <!-- Video Container -->
+<div
+    id="video-container"
+    class="relative w-[clamp(300px,44.444vw,640px)] aspect-[640/370] rounded-[30px] overflow-hidden shadow-[18px_12px_15.8px_0_rgba(0,0,0,0.55)] z-10"
+>
+
+    <!-- Video Cover -->
+    <div
+        id="video-cover"
+        class="absolute inset-0 z-20 cursor-pointer group"
+        onclick="playVideo()"
+    >
+
+        <!-- Cover Image -->
+        <img
+            src="./assets/abouttheauthor.png"
+            alt="About the Author"
+            class="w-full h-full object-cover"
+        >
+
+        Play Button
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-16 h-16 md:w-20 md:h-20 bg-white rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-7 h-7 md:w-9 md:h-9 text-[#b38a44] ml-1"
+                >
+                    <path d="M8 5v14l11-7z"/>
+                </svg>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- YouTube Video -->
+    <iframe
+        id="youtube-video"
+        src=""
+        title="About the Author"
+        class="w-full h-full object-cover"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+
+</div>
+
+
+
+<!-- Red Decorative SVG -->
+    <img
+        src="./assets/Ellipse 1.svg"
+        alt=""
+        aria-hidden="true"
+        class="absolute -bottom-12 -left-14 w-36 md:w-48 lg:w-52 z-0 hidden md:block"
+    >
+    <!-- Yellow Decorative SVG -->
+    <img
+        src="./assets/Ellipse 2.svg"
+        alt=""
+        aria-hidden="true"
+        class="absolute -bottom-10 -left-10 w-40 md:w-48 lg:w-56 z-0 hidden md:block"
+    >
+
+    <!-- Blue Decorative SVG -->
+    <img
+        src="./assets/Rectangle 289.svg"
+        alt=""
+        aria-hidden="true"
+        class="absolute -top-10 -right-10 w-32 md:w-36 lg:w-40 z-0 hidden md:block"
+    >
+
+</div>
+</section>
+
+ <!-- Testimonials (Swiper Carousel) -->
+<section class="max-w-7xl mx-auto px-8 py-10 mb-12 overflow-hidden">
+    <div class="swiper testimonialSwiper pb-12"> <!-- Added bottom padding for pagination dots -->
+        <div class="swiper-wrapper" id="testimonial-wrapper">
+            <!-- Testimonial slides will be injected here by JavaScript -->
+        </div>
+        <!-- Optional: Adds clickable dots at the bottom -->
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<!-- Main Content Split Section -->
+<section class="max-w-7xl mx-auto px-8  flex">
+    
+    <!-- Text Content -->
+    <div class="flex-1 text-gray-800 text-[15px] space-y-6 leading-relaxed ">
+        <p>Throughout my career—as a college professor, adviser and administrator—my goal has been to help college students thrive. I know from experience that every student, given the proper support, can transition smoothly to college and use these years to grow intellectually and personally.</p>
+        
+        <p>I get to know each student personally, so I can help them set goals, overcome obstacles to success, and make healthy decisions. Each student gets the attention they deserve, and the consistent, seasoned advice they need to thrive.</p>
+        
+        <p>I work with students from all backgrounds and at all stages in their college careers. Students come with a wide range of needs and goals:</p>
+        
+        <ul class="list-disc pl-6 space-y-2">
+            <li>Some want to learn to study more effectively and get more from their courses.</li>
+            <li>Some are struggling with personal issues—health or family situations—that can lead to lower academic performance.</li>
+            <li>Some need help with specific decisions, such as how to prepare for interviews, choose a major, or navigate academic policy.</li>
+            <li>Some are trying to decide whether to transfer or take a leave of absence.</li>
+            <li>And some come with neurodiversity, time management, or executive function issues that are preventing them from doing their best work.</li>
+        </ul>
+
+        <p>With the right support, all these students can achieve their goals and make the most of their college years.</p>
+        
+        <p class="font-bold text-lg text-gray-900 pt-2">
+            You gave your student all the help they needed to get into college.<br>
+            Now you can give them the help they need to succeed.
+        </p>
+
+        <p>You can find more information about my academic background <a href="#" class="text-[#1c7ced] font-medium hover:underline transition">here</a>.</p>
+        <p class="font-medium text-gray-500 mt-3">
+                Schedule a free, no obligation, consultation to see if College Success Coaching is right for your student.
+        </p>      
+        <div class="pt-2">
+            <a href="#" class="inline-block bg-[#b38a44] text-white px-6 py-3 rounded-md font-medium hover:bg-[#9a7538] transition">
+                Schedule a Consultation
+            </a>
+            
+        </div>
+    </div>    
+</section>
+
+
+<!-- JavaScript -->
+<script>
+    function playVideo() {
+        const cover = document.getElementById('video-cover');
+        const iframe = document.getElementById('youtube-video');
+
+        iframe.src = "assets/Newman-book-promotional-video.mp4"; // Add autoplay parameter
+
+        cover.style.display = 'none';
+    }
+</script>
+<!-- Swiper JS -->
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+
+    
+    // 1. Define your testimonials data here
+    const testimonials = [
+        {
+            quote: "Outstanding presentation. Lots of powerful take-aways and \"Aha\" moments",
+            stars: "★★★★★"
+        },
+        {
+            quote: "Louis was such a fantastic speaker. I enjoyed his talk so much I bought his book. Critical thinking is one of the most important skills our students need to learn. I thought this was an excellent session.",
+            stars: "★★★★★"
+        },
+        {
+            quote: "If I could give a rating higher than Excellent, I would. I was attentive to his every word. I am very familiar with critical thinking and metacognition, but I loved listening to him talk about it on a deeper level. He knows this topic very well.",
+            stars: "★★★★★"
+        },
+        {
+            quote: "Great orator. Wonderful presentation!",
+            stars: "★★★★★"
+        },
+        {
+            quote: "It was an amazing, engaging, and informative workshop. I truly loved it!",
+            stars: "★★★★★"
+        },
+        {
+            quote: "Dr. Newman's lecture on critical thinking got me to critically think about the discrepancy between my expectations for my students and what I actually teach them. This topic was very fitting in light of AI and that our students need those critical thinking skills now more than ever.",
+            stars: "★★★★★"
+        },
+        {
+            quote: "I love the clarity and encouragement Louis shared around critical thinking. I had not thought about the value of explicitly detailing how I critically think and how my students can do the same.",
+            stars: "★★★★★"
+        },
+        {
+            quote: "In this era of AI, courses need to be designed around critical reading, writing, and thinking. All faculty need to read Louis's book.",
+            stars: "★★★★★"
+        }
+    ];
+    // 2. Inject the testimonials into the Swiper wrapper
+    const testimonialWrapper = document.getElementById('testimonial-wrapper');
+
+    testimonials.forEach(item => {
+        const slide = document.createElement('div');
+        // 'h-auto' allows the slide to stretch to match the tallest quote in the row
+        slide.className = 'swiper-slide flex flex-col items-center text-center ';
+        
+        // 'grow' on the paragraph forces the stars and author down so they always align perfectly!
+        slide.innerHTML = `
+            <img src="./assets/quote.svg" alt="quotation mark" aria-hidden="true" class="w-12 h-12 pb-4 object-contain" />
+            <p class="mb-6 text-[11px] leading-relaxed text-gray-600 ">
+                "${item.quote}"
+            </p>
+            <div class="text-[#f1c40f] mb-3 text-xl tracking-widest">${item.stars}</div>
+          
+        `;
+        testimonialWrapper.appendChild(slide);
+    });
+
+    // 3. Initialize the Testimonial Swiper
+    const testimonialSwiper = new Swiper(".testimonialSwiper", {
+        autoheight: true,
+        slidesPerView: 1,         // Show 1 testimonial on mobile
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 6000,          // Gives people 6 seconds to read before swiping
+            disableOnInteraction: true, // Pauses autoplay if the user swipes manually
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,      // Allows clicking the dots to navigate
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2, // Show 2 testimonials on tablets
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 3, // Show 3 testimonials on desktop (matches your original grid)
+                spaceBetween: 50,
+            },
+        },
+    });
+</script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Success Coaching</title>
+    <link rel="stylesheet" href="./assets/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+       
+        
+        .about-title {
+  color: #000;
+  text-align: left;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.5rem, 2.8vw, 2.5rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 2px;
+  z-index: 13;
+  padding-left: 0.3em;
+}
+
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+       <!-- Header / Navigation -->
+    <header class="navbar bg-[#9FD2E1] flex flex-col md:flex-row justify-between items-center py-4">
+        <div class="logo flex items-center gap-2 mb-4 md:mb-0">
+            <a href="index.html" class="w-[clamp(80px,10vw,112px)] h-auto">
+                <img src="./assets/logo.png" alt="Logo">
+            </a>
+        </div>
+        
+        <nav class="flex flex-wrap justify-center items-center gap-6 md:gap-12 text-white text-sm font-semibold mb-4 md:mb-0">
+            <a href="about.html" class="navbar-text hover:text-gray-200 transition">About</a>
+            <a href="what-is-coaching.html" class="navbar-text hover:text-gray-200 transition">What is Coaching?</a>
+            
+            <!-- Services Dropdown Container -->
+            <div class="relative group">
+                <a href="services.html" class="navbar-text hover:text-gray-200 transition flex items-center gap-1 py-2">
+                    Services
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3 h-3 mt-0.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </a>
+                
+                <div class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 top-full w-56 bg-white rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 flex flex-col overflow-hidden border border-gray-100">
+                    <a href="individual-coaching.html" class="block px-5 py-3 text-sm text-gray-700 font-medium hover:bg-gray-50 hover:text-[#1c7ced] transition-colors border-b border-gray-100">
+                        Individual Coaching
+                    </a>
+                    <a href="college-readiness-programs.html" class="block px-5 py-3 text-sm text-gray-700 font-medium hover:bg-gray-50 hover:text-[#1c7ced] transition-colors">
+                        College Readiness Programs
+                    </a>
+                </div>
+            </div>
+
+            <a href="book.html" class="navbar-text hover:text-gray-200 transition">Book</a>
+            <a href="speaking.html" class="navbar-text hover:text-gray-200 transition">Speaking</a>
+            
+            <!-- Resources Dropdown Container -->
+            <div class="relative group">
+                <a href="resources.html" class="navbar-text hover:text-gray-200 transition flex items-center gap-1 py-2">
+                    Resources
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3 h-3 mt-0.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </a>
+                
+                <div class="absolute left-1/2 -translate-x-1/2 md:left-auto md:right-0 md:translate-x-0 top-full w-48 bg-white rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 flex flex-col overflow-hidden border border-gray-100">
+                    <a href="blog.html" class="block px-5 py-3 text-sm text-gray-700 font-medium hover:bg-gray-50 hover:text-[#1c7ced] transition-colors">
+                        News & Insights (Blog)
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <button class="bg-[#7ca9d6] text-white px-5 py-2.5 rounded-md font-medium text-sm hover:bg-[#6894c0] transition">
+            Schedule a Consultation
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-8 py-16 md:py-24 flex flex-col lg:flex-row items-center gap-16 relative ">
+        <div class="flex-1  z-10 relative"> <!-- Added 'relative' here -->
+    
+    
+    <h1 class="about-title relative"> <!-- Added 'relative' here -->
+        <!-- Pulled above the SVG -->
+        <span class="relative z-20">A passion for</span><br>
+        
+        <!-- Left static so the SVG (z-10) loops OVER it -->
+        <span>helping college</span><br>
+        
+        <!-- Pulled above the SVG (replaced inline style with Tailwind z-20) -->
+        <span class="relative z-20">students succeed</span>
+    </h1>
+    
+    <!-- Pulled above the SVG -->
+    <p class="text-black-400 text-lg md:text-xl font-medium pt-4 relative z-20 pl-2.5" style="width: 90%;">
+        College Success Coach, Educational Consultant, and Author of <i>Thinking Critically in College: The Essential Handbook for Student Success.</i> Scholar of Jewish Ethics
+    </p>
+    
+    <!-- Pulled above the SVG -->
+    <div class="flex flex-wrap gap-4 pt-4 relative z-20">
+        <button class="bg-[#b38a44] text-white px-6 py-3 rounded-md font-medium hover:bg-[#9a7538] transition">Schedule a Consultation</button>
+        <button class="bg-[#b38a44] text-white px-6 py-3 rounded-md font-medium hover:bg-[#9a7538] transition">Schedule a Consultation</button>
+    </div>
+</div>
+        <div class="flex-1 relative w-full flex justify-center lg:justify-end z-10">
+
+   <!-- Video Container -->
+<div
+    id="video-container"
+    class="relative w-[clamp(300px,44.444vw,640px)] aspect-[640/370] rounded-[30px] overflow-hidden shadow-[18px_12px_15.8px_0_rgba(0,0,0,0.55)] z-10"
+>
+
+    <!-- Video Cover -->
+    <div
+        id="video-cover"
+        class="absolute inset-0 z-20 cursor-pointer group"
+        onclick="playVideo()"
+    >
+
+        <!-- Cover Image -->
+        <img
+            src="./assets/abouttheauthor.png"
+            alt="About the Author"
+            class="w-full h-full object-cover"
+        >
+
+        Play Button
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-16 h-16 md:w-20 md:h-20 bg-white rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-7 h-7 md:w-9 md:h-9 text-[#b38a44] ml-1"
+                >
+                    <path d="M8 5v14l11-7z"/>
+                </svg>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- YouTube Video -->
+    <iframe
+        id="youtube-video"
+        src=""
+        title="About the Author"
+        class="w-full h-full object-cover"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+
+</div>
+
+
+
+<!-- Red Decorative SVG -->
+    <img
+        src="./assets/Ellipse 1.svg"
+        alt=""
+        aria-hidden="true"
+        class="absolute -bottom-12 -left-14 w-36 md:w-48 lg:w-52 z-0 hidden md:block"
+    >
+    <!-- Yellow Decorative SVG -->
+    <img
+        src="./assets/Ellipse 2.svg"
+        alt=""
+        aria-hidden="true"
+        class="absolute -bottom-10 -left-10 w-40 md:w-48 lg:w-56 z-0 hidden md:block"
+    >
+
+    <!-- Blue Decorative SVG -->
+    <img
+        src="./assets/Rectangle 289.svg"
+        alt=""
+        aria-hidden="true"
+        class="absolute -top-10 -right-10 w-32 md:w-36 lg:w-40 z-0 hidden md:block"
+    >
+
+</div>
+</section>
+
+ <!-- Testimonials (Swiper Carousel) -->
+<section class="max-w-7xl mx-auto px-8 py-10 mb-12 overflow-hidden">
+    <div class="swiper testimonialSwiper pb-12"> <!-- Added bottom padding for pagination dots -->
+        <div class="swiper-wrapper" id="testimonial-wrapper">
+            <!-- Testimonial slides will be injected here by JavaScript -->
+        </div>
+        <!-- Optional: Adds clickable dots at the bottom -->
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<!-- Main Content Split Section -->
+<section class="max-w-7xl mx-auto px-8  flex">
+    
+    <!-- Text Content -->
+    <div class="flex-1 text-gray-800 text-[15px] space-y-6 leading-relaxed ">
+        <p>Throughout my career—as a college professor, adviser and administrator—my goal has been to help college students thrive. I know from experience that every student, given the proper support, can transition smoothly to college and use these years to grow intellectually and personally.</p>
+        
+        <p>I get to know each student personally, so I can help them set goals, overcome obstacles to success, and make healthy decisions. Each student gets the attention they deserve, and the consistent, seasoned advice they need to thrive.</p>
+        
+        <p>I work with students from all backgrounds and at all stages in their college careers. Students come with a wide range of needs and goals:</p>
+        
+        <ul class="list-disc pl-6 space-y-2">
+            <li>Some want to learn to study more effectively and get more from their courses.</li>
+            <li>Some are struggling with personal issues—health or family situations—that can lead to lower academic performance.</li>
+            <li>Some need help with specific decisions, such as how to prepare for interviews, choose a major, or navigate academic policy.</li>
+            <li>Some are trying to decide whether to transfer or take a leave of absence.</li>
+            <li>And some come with neurodiversity, time management, or executive function issues that are preventing them from doing their best work.</li>
+        </ul>
+
+        <p>With the right support, all these students can achieve their goals and make the most of their college years.</p>
+        
+        <p class="font-bold text-lg text-gray-900 pt-2">
+            You gave your student all the help they needed to get into college.<br>
+            Now you can give them the help they need to succeed.
+        </p>
+
+        <p>You can find more information about my academic background <a href="#" class="text-[#1c7ced] font-medium hover:underline transition">here</a>.</p>
+        <p class="font-medium text-gray-500 mt-3">
+                Schedule a free, no obligation, consultation to see if College Success Coaching is right for your student.
+        </p>      
+        <div class="pt-2">
+            <a href="#" class="inline-block bg-[#b38a44] text-white px-6 py-3 rounded-md font-medium hover:bg-[#9a7538] transition">
+                Schedule a Consultation
+            </a>
+            
+        </div>
+    </div>    
+</section>
+
+
+<!-- JavaScript -->
+<script>
+    function playVideo() {
+        const cover = document.getElementById('video-cover');
+        const iframe = document.getElementById('youtube-video');
+
+        iframe.src = "assets/Newman-book-promotional-video.mp4"; // Add autoplay parameter
+
+        cover.style.display = 'none';
+    }
+</script>
+<!-- Swiper JS -->
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+
+    
+    // 1. Define your testimonials data here
+    const testimonials = [
+        {
+            quote: "Outstanding presentation. Lots of powerful take-aways and \"Aha\" moments",
+            stars: "★★★★★"
+        },
+        {
+            quote: "Louis was such a fantastic speaker. I enjoyed his talk so much I bought his book. Critical thinking is one of the most important skills our students need to learn. I thought this was an excellent session.",
+            stars: "★★★★★"
+        },
+        {
+            quote: "If I could give a rating higher than Excellent, I would. I was attentive to his every word. I am very familiar with critical thinking and metacognition, but I loved listening to him talk about it on a deeper level. He knows this topic very well.",
+            stars: "★★★★★"
+        },
+        {
+            quote: "Great orator. Wonderful presentation!",
+            stars: "★★★★★"
+        },
+        {
+            quote: "It was an amazing, engaging, and informative workshop. I truly loved it!",
+            stars: "★★★★★"
+        },
+        {
+            quote: "Dr. Newman's lecture on critical thinking got me to critically think about the discrepancy between my expectations for my students and what I actually teach them. This topic was very fitting in light of AI and that our students need those critical thinking skills now more than ever.",
+            stars: "★★★★★"
+        },
+        {
+            quote: "I love the clarity and encouragement Louis shared around critical thinking. I had not thought about the value of explicitly detailing how I critically think and how my students can do the same.",
+            stars: "★★★★★"
+        },
+        {
+            quote: "In this era of AI, courses need to be designed around critical reading, writing, and thinking. All faculty need to read Louis's book.",
+            stars: "★★★★★"
+        }
+    ];
+    // 2. Inject the testimonials into the Swiper wrapper
+    const testimonialWrapper = document.getElementById('testimonial-wrapper');
+
+    testimonials.forEach(item => {
+        const slide = document.createElement('div');
+        // 'h-auto' allows the slide to stretch to match the tallest quote in the row
+        slide.className = 'swiper-slide flex flex-col items-center text-center ';
+        
+        // 'grow' on the paragraph forces the stars and author down so they always align perfectly!
+        slide.innerHTML = `
+            <img src="./assets/quote.svg" alt="quotation mark" aria-hidden="true" class="w-12 h-12 pb-4 object-contain" />
+            <p class="mb-6 text-[11px] leading-relaxed text-gray-600 ">
+                "${item.quote}"
+            </p>
+            <div class="text-[#f1c40f] mb-3 text-xl tracking-widest">${item.stars}</div>
+          
+        `;
+        testimonialWrapper.appendChild(slide);
+    });
+
+    // 3. Initialize the Testimonial Swiper
+    const testimonialSwiper = new Swiper(".testimonialSwiper", {
+        autoheight: true,
+        slidesPerView: 1,         // Show 1 testimonial on mobile
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 6000,          // Gives people 6 seconds to read before swiping
+            disableOnInteraction: true, // Pauses autoplay if the user swipes manually
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,      // Allows clicking the dots to navigate
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2, // Show 2 testimonials on tablets
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 3, // Show 3 testimonials on desktop (matches your original grid)
+                spaceBetween: 50,
+            },
+        },
+    });
+</script>
+</body>
+>>>>>>> origin/main
+</html>

@@ -1,0 +1,68 @@
+<<<<<<< HEAD
+.navbar-text{
+
+color: #FFF;
+font-family: 'Poppins', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.12px;
+}
+
+.navbar {
+    display: inline-flex;
+padding: 0 32px;
+justify-content: center;
+align-items: center;
+gap: 92px;
+height: min-content;
+width: 100%;
+}
+
+ body {
+            font-family: 'Host Grotesk', sans-serif;
+        }
+h1 {
+            font-family: 'Poppins', sans-serif;
+}
+button{
+    font-family: 'Host Grotesk', sans-serif;
+}
+p, h2, h3, h4, h5, h6 {
+    font-family: 'Host Grotesk', sans-serif;
+=======
+.navbar-text{
+
+color: #FFF;
+font-family: 'Poppins', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.12px;
+}
+
+.navbar {
+    display: inline-flex;
+padding: 0 32px;
+justify-content: center;
+align-items: center;
+gap: 92px;
+height: min-content;
+width: 100%;
+}
+
+ body {
+            font-family: 'Host Grotesk', sans-serif;
+        }
+h1 {
+            font-family: 'Poppins', sans-serif;
+}
+button{
+    font-family: 'Host Grotesk', sans-serif;
+}
+p, h2, h3, h4, h5, h6 {
+    font-family: 'Host Grotesk', sans-serif;
+>>>>>>> origin/main
+}

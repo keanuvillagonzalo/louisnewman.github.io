@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Success Coaching</title>
+    <link rel="stylesheet" href="./assets/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+       
+        .highlight-yellow {
+            background-color: #ffde59;
+            padding: 0.1em 0.3em;
+            border-radius: 4px;
+            box-decoration-break: clone;
+            -webkit-box-decoration-break: clone;
+        }
+        .hero-title {
+  color: #000;
+  text-align: left;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.5rem, 2.8vw, 2.5rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 2px;
+  z-index: 13;
+  
+}
+
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+      <!-- Header / Navigation -->
+    <header class="navbar bg-[#9FD2E1] flex flex-col md:flex-row justify-between items-center py-4">
+        <div class="logo flex items-center gap-2 mb-4 md:mb-0">
+            <a href="index.html" class="w-[clamp(80px,10vw,112px)] h-auto">
+                <img src="./assets/logo.png" alt="Logo">
+            </a>
+        </div>
+        
+        <nav class="flex flex-wrap justify-center items-center gap-6 md:gap-12 text-white text-sm font-semibold mb-4 md:mb-0">
+            <a href="about.html" class="navbar-text hover:text-gray-200 transition">About</a>
+            <a href="what-is-coaching.html" class="navbar-text hover:text-gray-200 transition">What is Coaching?</a>
+            
+            <!-- Services Dropdown Container -->
+            <div class="relative group">
+                <a href="services.html" class="navbar-text hover:text-gray-200 transition flex items-center gap-1 py-2">
+                    Services
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3 h-3 mt-0.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </a>
+                
+                <div class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 top-full w-56 bg-white rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 flex flex-col overflow-hidden border border-gray-100">
+                    <a href="individual-coaching.html" class="block px-5 py-3 text-sm text-gray-700 font-medium hover:bg-gray-50 hover:text-[#1c7ced] transition-colors border-b border-gray-100">
+                        Individual Coaching
+                    </a>
+                    <a href="college-readiness-programs.html" class="block px-5 py-3 text-sm text-gray-700 font-medium hover:bg-gray-50 hover:text-[#1c7ced] transition-colors">
+                        College Readiness Programs
+                    </a>
+                </div>
+            </div>
+
+            <a href="book.html" class="navbar-text hover:text-gray-200 transition">Book</a>
+            <a href="speaking.html" class="navbar-text hover:text-gray-200 transition">Speaking</a>
+            
+            <!-- Resources Dropdown Container -->
+            <div class="relative group">
+                <a href="resources.html" class="navbar-text hover:text-gray-200 transition flex items-center gap-1 py-2">
+                    Resources
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3 h-3 mt-0.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </a>
+                
+                <div class="absolute left-1/2 -translate-x-1/2 md:left-auto md:right-0 md:translate-x-0 top-full w-48 bg-white rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 flex flex-col overflow-hidden border border-gray-100">
+                    <a href="blog.html" class="block px-5 py-3 text-sm text-gray-700 font-medium hover:bg-gray-50 hover:text-[#1c7ced] transition-colors">
+                        News & Insights (Blog)
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <button class="bg-[#7ca9d6] text-white px-5 py-2.5 rounded-md font-medium text-sm hover:bg-[#6894c0] transition">
+            Schedule a Consultation
+        </button>
+    </header>
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-8 py-16 md:py-24 flex flex-col lg:flex-row items-center gap-16 relative ">
+        <div class="flex-1 space-y-6 z-10 relative"> <!-- Added 'relative' here -->
+    
+    <!-- NEW GRAPHIC PATH OVER TEXT (loop circles 'Right') -->
+    <img src="./assets/gemini-svg 2.svg" alt="Airplane Graphic" aria-hidden="true" 
+     class="absolute pointer-events-none z-10 h-auto max-w-none
+            top-[2rem] -left-[2rem] w-[20rem] 
+            md:top-[3rem] md:-left-[3rem] md:w-[31rem] 
+            lg:top-[3.3rem] lg:-left-[6.5rem] lg:w-[39.5rem]">
+    
+    <h1 class="hero-title relative"> <!-- Added 'relative' here -->
+        <!-- Pulled above the SVG -->
+        <span class="highlight-yellow relative z-20">Doing Everything</span><br>
+        
+        <!-- Left static so the SVG (z-10) loops OVER it -->
+        <span style="padding: 0.1em 0.3em; font-weight: 700;">Right But Still</span><br>
+        
+        <!-- Pulled above the SVG (replaced inline style with Tailwind z-20) -->
+        <span class="highlight-yellow relative z-20">Falling Behind?</span>
+    </h1>
+    
+    <!-- Pulled above the SVG -->
+    <p class="text-black-400 text-lg md:text-xl font-medium pt-4 relative z-20 pl-2.5" style="width: 80%;">
+        When <strong>hard work</strong> isn't translating to college success, <em>overworked campus advisors</em> aren't enough. Leverage <strong>1:1 personalized guidance</strong> to overcome obstacles and regain confidence. 
+    </p>
+    
+    <!-- Pulled above the SVG -->
+    <div class="flex flex-wrap gap-4 pt-4 relative z-20">
+        <button class="bg-[#b38a44] text-white px-6 py-3 rounded-md font-medium hover:bg-[#9a7538] transition">Schedule a Consultation</button>
+        <button class="bg-[#b38a44] text-white px-6 py-3 rounded-md font-medium hover:bg-[#9a7538] transition">Schedule a Consultation</button>
+    </div>
+</div>
+        <div class="flex-1 relative w-full flex justify-center lg:justify-end z-10">
+
+   <!-- Video Container -->
+<div
+    id="video-container"
+    class="relative w-[clamp(300px,44.444vw,640px)] aspect-[640/370] rounded-[30px] overflow-hidden shadow-[18px_12px_15.8px_0_rgba(0,0,0,0.55)] z-10"
+>
+
+    <!-- Video Cover -->
+    <div
+        id="video-cover"
+        class="absolute inset-0 z-20 cursor-pointer group"
+        onclick="playVideo()"
+    >
+
+        <!-- Cover Image -->
+        <img
+            src="./assets/louisyoutubeseries.png"
+            alt="College Doesn't Have to be Overwhelming"
+            class="w-full h-full object-cover"
+        >
+
+        Play Button
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-16 h-16 md:w-20 md:h-20 bg-white rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-7 h-7 md:w-9 md:h-9 text-[#b38a44] ml-1"
+                >
+                    <path d="M8 5v14l11-7z"/>
+                </svg>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- YouTube Video -->
+    <iframe
+        id="youtube-video"
+        src="https://www.youtube.com/embed/duoTobUJOrI?enablejsapi=1"
+        title="College Doesn't Have to be Overwhelming"
+        class="w-full h-full"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+
+</div>
+
+
+
+<!-- Red Decorative SVG -->
+    <img
+        src="./assets/Ellipse 1.svg"
+        alt=""
+        aria-hidden="true"
+        class="absolute -bottom-12 -left-14 w-36 md:w-48 lg:w-52 z-0 hidden md:block"
+    >
+    <!-- Yellow Decorative SVG -->
+    <img
+        src="./assets/Ellipse 2.svg"
+        alt=""
+        aria-hidden="true"
+        class="absolute -bottom-10 -left-10 w-40 md:w-48 lg:w-56 z-0 hidden md:block"
+    >
+
+    <!-- Blue Decorative SVG -->
+    <img
+        src="./assets/Rectangle 289.svg"
+        alt=""
+        aria-hidden="true"
+        class="absolute -top-10 -right-10 w-32 md:w-36 lg:w-40 z-0 hidden md:block"
+    >
+
+</div>
+    </section>
+
+    <!-- Featured In Logos (Swiper Carousel) -->
+<section class="py-12 overflow-hidden">
+    <h3 class="text-center text-xs font-semibold tracking-widest text-gray-400 mb-8 uppercase">Featured In</h3>
+    <div class="max-w-6xl mx-auto px-4 opacity-80">
+        <!-- Swiper Container -->
+        <div class="swiper featuredLogosSwiper">
+            <div class="swiper-wrapper items-center" id="featured-logos-wrapper">
+                <!-- Slides will be injected here by JavaScript -->
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Main Content Split Section -->
+<section class="max-w-7xl mx-auto px-8 py-16 flex flex-col lg:flex-row gap-12 lg:gap-16">
+    
+    <!-- Left Text Content -->
+    <!-- Removed the extreme right padding, letting the gap handle the spacing -->
+    <div class="flex-1 text-gray-800 text-[15px] space-y-6 leading-relaxed md:pr-8 lg:pr-40">
+        <p>Most students worry about getting into college. Far fewer stop to consider how they will do college—what their goals are and how they'll navigate the challenges that often come up.</p>
+        <p>College is often harder than students expect. There are lots of challenges—academic, social, and personal.</p>
+        <p>In fact, most college students hit a moment where things aren't working as planned—maybe they're in over their head in a course, they're spiraling downward emotionally, they've lost a sense of direction or motivation, or they're doing everything "right" and still falling behind. They've talked with their academic advisor, but that person has hundreds of other advisees and little time to help.</p>
+        <p>As a parent, you don't always know who to call.</p>
+        <p>Working with an individual College Success Coach can help your student overcome obstacles, get back on track, set appropriate goals, and make sure they follow through.</p>
+        <p>So, whether your student is struggling academically, needs extra support transitioning successfully from high school to college, or would just benefit from personalized advice in making key decisions...</p>
+        <p class="font-bold">College Success Coaching can help.</p>
+    </div>
+
+    <!-- Right Blue Cards -->
+    <div class="w-full lg:w-[480px] flex flex-col gap-6">
+        <!-- Card 1 -->
+        <div class="bg-[#1c7ced] text-white p-8 rounded-xl shadow-lg">
+            <p class="text-[11px] font-bold uppercase tracking-wider mb-2 opacity-90">Struggling Right Now?</p>
+            <h3 class="text-3xl font-medium mb-3">Individual Coaching</h3>
+            <p class="mb-6 opacity-90 text-sm leading-relaxed">Ongoing, one-on-one support built around your student's unique needs.</p>
+            <a href="#" class="inline-block border-b border-white pb-0.5 text-sm font-medium hover:opacity-80 transition">See how it works &rarr;</a>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="bg-[#1c7ced] text-white p-8 rounded-xl shadow-lg">
+            <p class="text-[11px] font-bold uppercase tracking-wider mb-2 opacity-90">Heading to College Soon?</p>
+            <h3 class="text-3xl font-medium mb-3">College Readiness Programs</h3>
+            <p class="mb-6 opacity-90 text-sm leading-relaxed">College Launchpad™ and the Ready, Set, Think bootcamp. Get ready before you arrive.</p>
+            <a href="#" class="inline-block border-b border-white pb-0.5 text-sm font-medium hover:opacity-80 transition">Explore programs &rarr;</a>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="bg-[#1c7ced] text-white p-8 rounded-xl shadow-lg">
+            <p class="text-[11px] font-bold uppercase tracking-wider mb-2 opacity-90">The Ultimate College Success Book</p>
+            <h3 class="text-3xl font-medium mb-3">Thinking Critically in College</h3>
+            <p class="mb-6 opacity-90 text-sm leading-relaxed">The only book that explains how to do the work in your college courses, and much more.</p>
+            <a href="#" class="inline-block border-b border-white pb-0.5 text-sm font-medium hover:opacity-80 transition">About the book &rarr;</a>
+        </div>
+    </div>
+</section>
+
+  
+    <!-- Guest Speaker Logos (Swiper Carousel) -->
+<section class="py-12 border-t border-gray-100 overflow-hidden">
+    <h3 class="text-center text-xs font-semibold tracking-widest text-gray-400 mb-8 uppercase">Guest Speaker At</h3>
+    <div class="max-w-6xl mx-auto px-4">
+        <!-- Swiper Container -->
+        <div class="swiper guestSpeakerSwiper">
+            <div class="swiper-wrapper items-center" id="guest-speaker-wrapper">
+                <!-- Slides will be injected here by JavaScript -->
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- Testimonials (Swiper Carousel) -->
+<section class="max-w-7xl mx-auto px-8 py-16 mb-12 overflow-hidden">
+    <div class="swiper testimonialSwiper pb-12"> <!-- Added bottom padding for pagination dots -->
+        <div class="swiper-wrapper" id="testimonial-wrapper">
+            <!-- Testimonial slides will be injected here by JavaScript -->
+        </div>
+        <!-- Optional: Adds clickable dots at the bottom -->
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+
+<!-- Press & Blog Concept 2: Hero & Sidekicks -->
+<section class="max-w-7xl mx-auto px-8 py-16 md:py-24">
+    <!-- Section Header -->
+    <div class="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
+        <div>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 font-['Poppins'] tracking-wide">
+                Latest <span class="text-[#b38a44]">Insights</span>
+            </h2>
+            <p class="text-gray-500 mt-2 text-[15px]">Thoughts on college success and recent media appearances.</p>
+        </div>
+        <a href="#" class="text-[#1c7ced] font-medium hover:underline transition flex items-center gap-1 text-sm whitespace-nowrap">
+            View All Content &rarr;
+        </a>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+        <!-- Hero Card (Left side, takes up 7 columns on desktop) -->
+        <a href="#" class="lg:col-span-7 group flex flex-col bg-white rounded-[20px] overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 relative h-full">
+            <div class="absolute top-6 left-6 z-10 bg-[#b38a44] text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider shadow-md">
+                Featured
+            </div>
+            <!-- Large Image -->
+            <div class="aspect-[16/9] lg:aspect-[4/3] overflow-hidden">
+                <img src="./assets/louisarticle.jpeg" alt="Featured article image" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            </div>
+            <div class="p-8 flex flex-col flex-grow bg-white">
+                <p class="text-sm text-gray-500 mb-3 font-medium uppercase tracking-wide">The Chronicle of Higher Education • Oct 14, 2024</p>
+                <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 group-hover:text-[#1c7ced] transition-colors leading-tight">
+                    Rethinking the First-Year Experience: Why Advising Matters More Than Ever
+                </h3>
+                <p class="text-gray-600 text-base leading-relaxed mb-6">
+                    In a recent interview, Louis discusses the shifting landscape of college readiness and why transactional advising models are failing today's students.
+                </p>
+                <div class="mt-auto inline-flex items-center gap-2 text-[#b38a44] font-semibold">
+                    Read the full interview 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-5 h-5 group-hover:translate-x-1 transition-transform">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                    </svg>
+                </div>
+            </div>
+        </a>
+
+        <!-- Sidekicks Stack (Right side, takes up 5 columns on desktop) -->
+        <div class="lg:col-span-5 flex flex-col gap-4">
+            
+            <!-- Small Card 1 -->
+            <a href="#" class="group bg-gray-50 hover:bg-white rounded-[20px] p-6 border border-gray-100 hover:shadow-md transition-all duration-300 flex flex-col h-full justify-center">
+                <p class="text-xs text-[#1c7ced] mb-2 font-bold uppercase tracking-wider">Blog</p>
+                <h4 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#b38a44] transition-colors">How to Handle the First Semester Midterm Slump</h4>
+                <p class="text-gray-600 text-sm line-clamp-2">Many first-year students hit a wall around October. Here are three strategies to help them regain their footing.</p>
+            </a>
+
+            <!-- Small Card 2 -->
+            <a href="#" class="group bg-gray-50 hover:bg-white rounded-[20px] p-6 border border-gray-100 hover:shadow-md transition-all duration-300 flex flex-col h-full justify-center">
+                <p class="text-xs text-[#1c7ced] mb-2 font-bold uppercase tracking-wider">Podcast</p>
+                <h4 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#b38a44] transition-colors">The Parent Venture: Redefining College Success</h4>
+                <p class="text-gray-600 text-sm line-clamp-2">Listen to Louis's latest conversation on how parents can shift their focus from admission to actual academic thriving.</p>
+            </a>
+
+            <!-- Small Card 3 -->
+            <a href="#" class="group bg-gray-50 hover:bg-white rounded-[20px] p-6 border border-gray-100 hover:shadow-md transition-all duration-300 flex flex-col h-full justify-center">
+                <p class="text-xs text-[#1c7ced] mb-2 font-bold uppercase tracking-wider">Blog</p>
+                <h4 class="text-lg font-bold text-gray-900 mb-2 group-hover:text-[#b38a44] transition-colors">Navigating Office Hours: A Guide for Anxious Students</h4>
+                <p class="text-gray-600 text-sm line-clamp-2">Talking to professors can be intimidating. A step-by-step guide on how to prepare for your next visit.</p>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- JavaScript -->
+<script>
+    function playVideo() {
+        const cover = document.getElementById('video-cover');
+        const iframe = document.getElementById('youtube-video');
+
+        iframe.src = "https://www.youtube.com/embed/duoTobUJOrI?autoplay=1";
+
+        cover.style.display = 'none';
+    }
+</script>
+<!-- Swiper JS -->
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    const folderPath = './assets/Logos_Archive'; 
+    
+    // Define each file AND its specific size classes
+    const logos = [
+        { file: '/Inside_Higher_Ed_Logo.png', size: 'h-16 md:h-20' , alt: 'Inside Higher Ed Logo'},
+        // Parent Venture is a circle, so it usually needs more height to match wide logos
+        { file: '/Parent_Venture_Logo.png', size: 'h-20 md:h-24' , alt: 'Parent Venture Logo'}, 
+        { file: '/Kirkus_Reviews_Logo.png', size: 'h-16 md:h-20' , alt: 'Kirkus Reviews Logo'},
+        // N and Business Insider are squares, set them to medium height
+        { file: '/Red_Block_N_Logo.png', size: 'h-16 md:h-20' , alt: 'Newsweek Logo'}, 
+        { file: '/Business_Insider_Logo.png', size: 'h-16 md:h-20' , alt: 'Business Insider Logo'},
+        // UB and LINK are very wide, so they need smaller heights so they don't get massive
+        { file: '/University_Business_UB_Logo.png', size: 'h-24 md:h-28' , alt: 'University Business UB Logo'}, 
+        { file: '/LINK_for_Counselors_Logo.png', size: 'h-8 md:h-10' , alt: 'LINK for Counselors Logo'} 
+    ];
+
+    const wrapper = document.getElementById('featured-logos-wrapper');
+    
+    logos.forEach(logo => {
+        const slide = document.createElement('div');
+        slide.className = 'swiper-slide flex justify-center items-center h-full';
+        
+        // Injects the specific size classes defined in the array above
+        slide.innerHTML = `<img src="${folderPath}${logo.file}" alt="${logo.alt}" class="${logo.size} object-contain w-auto">`;
+        wrapper.appendChild(slide);
+    });
+
+    const swiper = new Swiper(".featuredLogosSwiper", {
+        slidesPerView: 2,         
+        spaceBetween: 30,
+        alignItems: 'center', // Helps align different sized logos vertically
+        loop: true,               
+        autoplay: {
+            delay: 2500,          
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 3, 
+                spaceBetween: 40,
+            },
+            768: {
+                slidesPerView: 4, 
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 5, 
+                spaceBetween: 50,
+            },
+        },
+    });
+
+
+    // 1. Define the separate folder path for colleges
+    const collegeFolderPath = './assets/Logos_Archive/Colleges'; // Change this to your actual folder name
+
+   
+    // 2. Define the college logos, custom sizes, and alt text
+    const collegeLogos = [
+        { file: '/Boston_University_Logo.png', size: 'h-12 md:h-14', alt: 'Boston University' },
+        { file: '/University_of_Miami_Logo.png', size: 'h-14 md:h-16', alt: 'University of Miami' },
+        { file: '/Dartmouth_College_Logo.png', size: 'h-14 md:h-20', alt: 'Dartmouth College' },
+        { file: '/University_of_Pennsylvania_Crest.png', size: 'h-14 md:h-20', alt: 'University of Pennsylvania' },
+        { file: '/Stanford_University_Logo.png', size: 'h-14 md:h-20', alt: 'Stanford University' },
+        { file: '/Alakhawayn University.jpeg', size: 'h-14 md:h-20', alt: 'Alakhawayn University' },
+        { file: '/Centre College Logo.jpg', size: 'h-14 md:h-20', alt: 'Centre College' },
+        { file: '/Illinois-Board-of-Higher-Education-Faculty-Advisory-Council-Logo.jpeg', size: 'h-16 md:h-24', alt: 'Illinois Board of Higher Education Faculty Advisory Council'},
+        { file: '/Madisonville_Community_College-Logo.jpg', size: 'h-16 md:h-24', alt: 'Madisonville Community College'},
+        { file: '/Stanford_University_Logo.png', size: 'h-14 md:h-20', alt: 'Stanford University' },
+        { file: '/University of Central Florida.png', size: 'h-14 md:h-20', alt: 'University of Central Florida' },
+        { file: '/University of Wisconsin La Crosse.png', size: 'h-14 md:h-20', alt: 'University of Wisconsin La Crosse' },
+        { file: '/Washington and Lee University.jpg', size: 'h-14 md:h-20', alt: 'Washington and Lee University'},
+        // Seals are circular and usually need more height to match the visual weight of other logos
+        { file: '/Carleton_College_Seal.png', size: 'h-16 md:h-24', alt: 'Carleton College' },
+        { file: '/Villanova_University_Seal.png', size: 'h-16 md:h-24', alt: 'Villanova University' },
+        { file: '/Vanderbilt_University_Seal.png', size: 'h-16 md:h-24', alt: 'Vanderbilt University' },
+        { file: '/Haverford College.png', size: 'h-16 md:h-24', alt: 'Haverford College' },
+        { file: '/University of Virginia Logo.jpg', size: 'h-16 md:h-24', alt: 'University of Virginia' },
+        { file: '/Clark_University_Logo.png', size: 'h-16 md:h-24', alt: 'Clark University' },
+        { file: '/Swarthmore College_Logo.png', size: 'h-16 md:h-24', alt: 'Swarthmore College' },
+        // Wordmarks are wide, so they need a smaller height to avoid dominating the row
+        { file: '/Georgetown_University_Logo.png', size: 'h-16 md:h-24', alt: 'Georgetown University' }
+    ];
+
+    // 3. Inject the images into the second Swiper wrapper
+    const guestWrapper = document.getElementById('guest-speaker-wrapper');
+    
+    collegeLogos.forEach(logo => {
+        const slide = document.createElement('div');
+        slide.className = 'swiper-slide flex justify-center items-center h-full';
+        slide.innerHTML = `<img src="${collegeFolderPath}${logo.file}" alt="${logo.alt}" class="${logo.size} object-contain w-auto">`;
+        guestWrapper.appendChild(slide);
+    });
+
+    // 4. Initialize the second Swiper instance
+    const guestSwiper = new Swiper(".guestSpeakerSwiper", {
+        slidesPerView: 3,         // Shows more college logos at once since they are mostly square
+        spaceBetween: 30,
+        alignItems: 'center',
+        loop: true,               
+        autoplay: {
+            delay: 3000,          // Slightly slower than the top carousel (3 seconds)
+            disableOnInteraction: false,
+            reverseDirection: false // Scrolls right-to-left for visual contrast
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 4, 
+                spaceBetween: 40,
+            },
+            768: {
+                slidesPerView: 5, 
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 6, 
+                spaceBetween: 50,
+            },
+        },
+    });
+
+
+    // 1. Define your testimonials data here
+    const testimonials = [
+        {
+            quote: "Louis Newman is a compelling public speaker, who is able to introduce students to the core concepts of critical thinking in a manner that is both clear and accessible. His many years of experience working with undergraduates comes through in the ease with which he is able to speak and connect with them. We are grateful for the time he spent with the members of the Echols Scholars Program.",
+            author: "Karl Shuve",
+            title: "Director, Echols Scholars Program at UVA",
+            stars: "★★★★★"
+        },
+        {
+            quote: "We had Dr. Newman visit during our three-day end of year faculty conference, and many faculty commented that his presentation was amazing. In fact, his talk was the #1 choice on the event evaluations as “most useful part of the conference.",
+            author: "Kevin Yee",
+            title: "Director, Faculty Center for Teaching & Learning at UCF",
+            stars: "★★★★★"
+        },
+        {
+            quote: "While many experts offer advice about college admission, Professor Louis Newman does something revolutionary: he tells us how to help students succeed in college. In his outstanding webinar, Dr. Newman describes the importance of developing critical thinking skills, not just as a means of academic success, but to prepare young people to become engaged, lifelong learners and productive members of society.",
+            author: "Charlene Margot",
+            title: "Co-Founder and CEO, The Parent Venture",
+            stars: "★★★★★"
+        },
+        {
+            quote: "Louis' presentation as part of the Bay Area Case Studies program was candid, thoughtful, informative, and funny. Our audience of Silicon Valley parents gained tremendous insights about conducting a more intentional college search, building the skills to thrive as a college student, and most importantly, redefining success. From the start to the finish of our event planning process, Louis was wonderfully collaborative and collegial.",
+            author: "Joel Dobben",
+            title: "Director of College Counseling, Sacred Heart Schools, Atherton, CA",
+            stars: "★★★★★"
+        },
+        {
+            quote: "Thank you so much, Professor Newman, for such an amazing workshop series on Critical Thinking. Our faculty at Al Akhawayn University felt extremely engaged in such an inspiring learning journey. Your innovative approach made this experience insightful, fruitful, and impactful.",
+            author: "Karim Moustaghfir",
+            title: "AVP for 21st Century Learning Innovation & Faculty Development, Al Akhawayn University in Ifrane (Morocco)",
+            stars: "★★★★★"
+        },
+        {
+            quote: "Thank you so very much for speaking with our seniors as they head off to college in the fall. Your advice and tips are invaluable as they transition from high school to college and you highlighted several concrete and attainable ways they can be productive and successful college students. It's hard to imagine how different college might be from high school, but you helped them feel more confident and comfortable about the uncertainty ahead of them.",
+            author: "Anna Takahashi",
+            title: "Director of College Counseling, Eastside College Prep, Palo Alto, CA",
+            stars: "★★★★★"
+        },
+        {
+            quote: "Louis Newman's workshop was incredibly informative and insightful for our incoming college freshmen. Louis delivered invaluable knowledge about succeeding in college that our students hadn't heard before, and he delivered it so accessibly. We are so grateful they could gain this knowledge from Louis and wholeheartedly recommend this workshop for other college students.",
+            author: "Izzy Stork",
+            title: "College Success Senior Manager at Minds Matter, NYC",
+            stars: "★★★★★"
+        },
+        {
+            quote: "You did a masterful job of getting advisers to articulate their most important concerns and leading a probing, productive conversation around their specific concerns. Thanks, too, for the excellent presentation you gave to students--a highly engaging and well-organized talk that met students where they are, prompted them to reflect on the core purposes of college education, and gave them concrete suggestions on how to accomplish those purposes.",
+            author: "Andrew Bove",
+            title: "Associate Director of Academic Advising, Villanova University",
+            stars: "★★★★★"
+        },
+        {
+            quote: "We thoroughly enjoyed welcoming Louis to Haverford. He clearly spent a tremendous amount of time preparing materials that were relevant both to mentors and students. Students lined up after the presentation to ask him questions, which is a testament to his deep knowledge and engaging presentation style.",
+            author: "Kelly Wilcox",
+            title: "Dean of Student Success, Haverford College ",
+            stars: "★★★★★"
+        },
+        {
+            quote: "Dr. Newman’s timely message to “put critical thinking at the center of our work” challenged us as institutional leaders, faculty members, and advisors to not abandon our calling. The value proposition of higher education is to provide our students the best opportunity to explore, ask questions, and learn to think critically. Technologies will change, but good thinking skills will last a lifetime.",
+            author: "Dr. Kathi Kern",
+            title: "Senior Vice Provost of Education, University of Miami",
+            stars: "★★★★★"
+        },
+        {
+            quote: "Thank You, Dr. Newman! We’re grateful to you for delivering two outstanding presentations, one for students and another for our faculty and staff. Attendees praised your engaging style, thoughtful answers, and practical strategies for teaching critical thinking. You reminded us that critical thinking does not happen by osmosis; it must be intentionally taught and practiced. Your book Thinking Critically in College has been an impactful resource that shows how to ensure critical thinking, not just hope for it. Your work has left a lasting impact- inspiring our community to approach dialogue and learning with greater intentionality.",
+            author: "Ashley S. Nowak",
+            title: "Director, Center for Civil Dialogue and Civic Engagement  University of Wisconsin—La Crosse",
+            stars: "★★★★★"
+        },
+        {
+            quote: "I am deeply grateful that you shared your insights, research, and experiences facilitating critical thinking. Your book is like a pedagogical map, providing steps for educators to navigate the cognitive geography of young minds. Not only did you impact our faculty, but also our administration and our student peer educators. Thank you!!",
+            author: "JT Torres",
+            title: "Director, Harte Center for Teaching and Learning, Washington & Lee University ",
+            stars: "★★★★★"
+        },
+        {
+            quote: "Louis Newman presented to our team several valuable frameworks for thinking about the work of academic advising: about moving from transactional to transformational relationships with students, about higher education not as the acquisition of a ticket-like credential but as the cultivation of a passport-like menu of capabilities. He also provided us with space and support to do what we needed most to do: converse together about how such frameworks might function practically in real scenarios. We are better advisors for Louis's having visited us, and we hope to welcome him again in the future. ",
+            author: "Meira Kensky",
+            title: "Director of Undergraduate Advising, University of Virginia ",
+            stars: "★★★★★"
+        },
+
+
+    ];
+
+    // 2. Inject the testimonials into the Swiper wrapper
+    const testimonialWrapper = document.getElementById('testimonial-wrapper');
+
+    testimonials.forEach(item => {
+        const slide = document.createElement('div');
+        // 'h-auto' allows the slide to stretch to match the tallest quote in the row
+        slide.className = 'swiper-slide flex flex-col items-center text-center ';
+        
+        // 'grow' on the paragraph forces the stars and author down so they always align perfectly!
+        slide.innerHTML = `
+            <img src="./assets/quote.svg" alt="quotation mark" aria-hidden="true" class="w-12 h-12 pb-4 object-contain" />
+            <p class="mb-6 text-[11px] leading-relaxed text-gray-600 ">
+                "${item.quote}"
+            </p>
+            <div class="text-[#f1c40f] mb-3 text-xl tracking-widest">${item.stars}</div>
+            <p class="font-bold text-gray-900 text-xs mb-1">${item.author}</p>
+            <p class="text-[10px] text-gray-500 tracking-wide">${item.title}</p>
+        `;
+        testimonialWrapper.appendChild(slide);
+    });
+
+    // 3. Initialize the Testimonial Swiper
+    const testimonialSwiper = new Swiper(".testimonialSwiper", {
+        autoheight: true,
+        slidesPerView: 1,         // Show 1 testimonial on mobile
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 6000,          // Gives people 6 seconds to read before swiping
+            disableOnInteraction: true, // Pauses autoplay if the user swipes manually
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,      // Allows clicking the dots to navigate
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2, // Show 2 testimonials on tablets
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 3, // Show 3 testimonials on desktop (matches your original grid)
+                spaceBetween: 50,
+            },
+        },
+    });
+</script>
+</body>
+</html>

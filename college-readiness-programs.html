@@ -1,0 +1,566 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Success Coaching - College Readiness Programs</title>
+    <link rel="stylesheet" href="./assets/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+       
+        .college-title {
+            color: #000;
+            text-align: left;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #000;
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%;
+            z-index: 13;
+            padding-left: 0.1em;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+       <!-- Header / Navigation -->
+    <header class="navbar bg-[#9FD2E1] flex flex-col md:flex-row justify-between items-center py-4">
+        <div class="logo flex items-center gap-2 mb-4 md:mb-0">
+            <a href="index.html" class="w-[clamp(80px,10vw,112px)] h-auto">
+                <img src="./assets/logo.png" alt="Logo">
+            </a>
+        </div>
+        
+        <nav class="flex flex-wrap justify-center items-center gap-6 md:gap-12 text-white text-sm font-semibold mb-4 md:mb-0">
+            <a href="about.html" class="navbar-text hover:text-gray-200 transition">About</a>
+            <a href="what-is-coaching.html" class="navbar-text hover:text-gray-200 transition">What is Coaching?</a>
+            
+            <!-- Services Dropdown Container -->
+            <div class="relative group">
+                <a href="services.html" class="navbar-text hover:text-gray-200 transition flex items-center gap-1 py-2">
+                    Services
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3 h-3 mt-0.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </a>
+                
+                <div class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 top-full w-56 bg-white rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 flex flex-col overflow-hidden border border-gray-100">
+                    <a href="individual-coaching.html" class="block px-5 py-3 text-sm text-gray-700 font-medium hover:bg-gray-50 hover:text-[#1c7ced] transition-colors border-b border-gray-100">
+                        Individual Coaching
+                    </a>
+                    <a href="college-readiness-programs.html" class="block px-5 py-3 text-sm text-gray-700 font-medium hover:bg-gray-50 hover:text-[#1c7ced] transition-colors">
+                        College Readiness Programs
+                    </a>
+                </div>
+            </div>
+
+            <a href="book.html" class="navbar-text hover:text-gray-200 transition">Book</a>
+            <a href="speaking.html" class="navbar-text hover:text-gray-200 transition">Speaking</a>
+            
+            <!-- Resources Dropdown Container -->
+            <div class="relative group">
+                <a href="resources.html" class="navbar-text hover:text-gray-200 transition flex items-center gap-1 py-2">
+                    Resources
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3 h-3 mt-0.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </a>
+                
+                <div class="absolute left-1/2 -translate-x-1/2 md:left-auto md:right-0 md:translate-x-0 top-full w-48 bg-white rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 flex flex-col overflow-hidden border border-gray-100">
+                    <a href="blog.html" class="block px-5 py-3 text-sm text-gray-700 font-medium hover:bg-gray-50 hover:text-[#1c7ced] transition-colors">
+                        News & Insights (Blog)
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <button class="bg-[#7ca9d6] text-white px-5 py-2.5 rounded-md font-medium text-sm hover:bg-[#6894c0] transition">
+            Schedule a Consultation
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-8 py-16 md:py-24 flex flex-col lg:flex-row items-center gap-16 relative w-[85%]">
+        <div class="flex-1 z-10 relative">
+            
+            <h1 class="college-title relative">
+                <span class="relative z-20">Transform College</span><br>
+                <span class="relative z-20">Anxiety Into Real</span><br>
+                <span class="relative z-20">Confidence</span>
+            </h1>
+            
+            <p class="text-gray-800 text-[15px] font-medium pt-6 relative z-20 pl-1 w-full md:w-[90%] leading-relaxed">
+                Getting accepted into college is the first step. These readiness programs provide targeted, short-term support to help your student build essential critical thinking skills and navigate campus resources.
+            </p>
+            
+            <div class="flex flex-wrap gap-4 pt-6 relative z-20 pl-1">
+                <button class="bg-[#b38a44] text-white px-6 py-3 rounded-md font-medium text-sm hover:bg-[#9a7538] transition">Schedule a Consultation</button>
+                <button class="bg-[#b38a44] text-white px-6 py-3 rounded-md font-medium text-sm hover:bg-[#9a7538] transition">Schedule a Consultation</button>
+            </div>
+        </div>
+
+        <div class="flex-1 relative w-full flex justify-center lg:justify-end z-10">
+            <!-- Video Container -->
+            <div id="video-container" class="relative w-[clamp(300px,44.444vw,640px)] aspect-[640/370] rounded-[30px] overflow-hidden shadow-[18px_12px_15.8px_0_rgba(0,0,0,0.55)] z-10">
+                <!-- Video Cover -->
+                <div id="video-cover" class="absolute inset-0 z-20 cursor-pointer group" onclick="playVideo()">
+                    <img src="./assets/louisyoutubeseries.png" alt="Transform College Anxiety Into Real Confidence" class="w-full h-full object-cover">
+                    <!-- Play Button -->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="w-16 h-16 md:w-20 md:h-20 bg-white rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7 md:w-9 md:h-9 text-[#b38a44] ml-1">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- YouTube Video (Starts Empty) -->
+                <iframe id="youtube-video" src="" title="College Readiness Programs" class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <!-- Red Decorative SVG -->
+            <img src="./assets/Ellipse 1.svg" alt="" aria-hidden="true" class="absolute -bottom-12 -left-14 w-36 md:w-48 lg:w-52 z-0 hidden md:block">
+            <!-- Yellow Decorative SVG -->
+            <img src="./assets/Ellipse 2.svg" alt="" aria-hidden="true" class="absolute -bottom-10 -left-10 w-40 md:w-48 lg:w-56 z-0 hidden md:block">
+            <!-- Blue Decorative SVG -->
+            <img src="./assets/Rectangle 289.svg" alt="" aria-hidden="true" class="absolute -top-10 -right-10 w-32 md:w-36 lg:w-40 z-0 hidden md:block">
+        </div>
+    </section>
+
+    <!-- Testimonials (Swiper Carousel) -->
+    <section class="max-w-7xl mx-auto px-8 py-8 mb-12 overflow-hidden border-b border-gray-100">
+        <div class="swiper testimonialSwiper pb-12"> 
+            <div class="swiper-wrapper" id="testimonial-wrapper">
+                <!-- Testimonial slides will be injected here by JavaScript -->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Main Content Split Section -->
+    <section class="max-w-7xl mx-auto px-8 py-12 flex flex-col lg:flex-row gap-12 lg:gap-16 mb-16">
+        
+        <!-- Left Text Content -->
+        <div class="flex-1 text-gray-800 text-[15px] space-y-6 leading-relaxed md:pr-8">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-black">College Readiness Programs</h2>
+            
+            <p>Transitioning to college requires more than just showing up on move-in day—it requires a proactive academic mindset. These focused, short-term programs are built to assess your student's preparation and develop essential skills before they even step foot into a lecture hall.</p>
+            
+            <p>The College Launchpad provides a focused, one-time readiness assessment to eliminate the guesswork of the freshman transition. Through a detailed survey and a dedicated one-on-one session, we create a custom written plan that highlights their strengths, predicts potential friction points, and identifies vital campus resources.</p>
+            
+            <p>For a deeper academic foundation, the Ready, Set, Think Bootcamp offers a four-week course designed to build rigorous academic habits. Working directly from my book, we tackle reflection exercises that equip your student with the concrete reading, writing, research, and critical thinking tools needed to succeed at the college level.</p>
+        </div>
+
+        <!-- Right Blue Cards -->
+        <div class="w-full lg:w-[600px] grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- Card 1 -->
+            <div class="bg-[#41a2f3] text-white p-8 rounded-xl shadow-lg flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-medium mb-3">College Launchpad</h3>
+                    <p class="mb-6 opacity-90 text-[13px] leading-relaxed">A one-time readiness assessment. Your student completes a detailed survey about their preparation and life experience, then spends an hour with me going deep on what it turned up. I follow that with a written plan: where they're genuinely well-prepared, where they may run into friction, and specific campus resources worth connecting with before they even arrive on campus.</p>
+                </div>
+                <button class="bg-white text-gray-800 px-6 py-2.5 rounded-md font-medium text-sm hover:bg-gray-100 transition w-max shadow-sm mt-4">Book Launchpad</button>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="bg-[#3091e6] text-white p-8 rounded-xl shadow-lg flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-medium mb-3 leading-tight">Ready, Set, Think Bootcamp</h3>
+                    <p class="mb-6 opacity-90 text-[13px] leading-relaxed mt-3">A four-session course built directly from my book, Thinking Critically in College. Over four weeks, we work through the book's reflection questions and exercises together — one-on-one, or in a small group of friends. By the end, your student will have concrete tools for reading, writing, research, and thinking at a college level.</p>
+                </div>
+                <button class="bg-white text-gray-800 px-6 py-2.5 rounded-md font-medium text-sm hover:bg-gray-100 transition w-max shadow-sm mt-4">Book Bootcamp</button>
+            </div>
+            
+        </div>
+    </section>
+
+<!-- JavaScript -->
+<script>
+    function playVideo() {
+        const cover = document.getElementById('video-cover');
+        const iframe = document.getElementById('youtube-video');
+        
+        // Injects URL on click and immediately starts playing
+        iframe.src = "https://www.youtube.com/embed/duoTobUJOrI?autoplay=1";
+        
+        cover.style.display = 'none';
+    }
+</script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+ // 1. Define your testimonials data here
+    const testimonials = [
+        {
+            quote: "Your coaching has been invaluable. You have a remarkable ability to identify and address the interconnected social, psychological, and academic challenges that students face. You have helped her cultivate that very sense of curiosity and confidence we hoped for. It is clear to us that the foundation you are helping her build will lead to a healthy and sustainable relationship with academics for years to come. We would not hesitate to recommend you to any family. You are more than a coach; you are a true mentor who empowers students to thrive in all aspects of their lives.",
+            author: "Mother of a UC-Berkeley student",
+            stars: "★★★★★"
+        },
+        {
+            quote: "Louis was (and continues to be) a compassionate and empathic mentor and advisor. During a particularly tough time. . . Louis was helpful, caring and understanding. I will never forget how carefully he listened to me and how kind his words were during that time.",
+            author: "Kate K",
+            stars: "★★★★★"
+        },
+        {
+            quote: "You always put me at ease and offered sage and realistic advice.",
+            author: "Ainsley T",
+            stars: "★★★★★"
+        },
+        {
+            quote: "With Louis, I can see what it means to put moral ideals into practice. . .what it means to be an advisor and teacher and moral guide.",
+            author: "Geoffrey C",
+            stars: "★★★★★"
+        },
+        {
+            quote: "During a time of life when I was often lost in abstractions, you consistently and gently pointed me back to my relationships with people and to being part of a community.",
+            author: "Dan K ",
+            stars: "★★★★★"
+        },
+        {
+            quote: "I will always be indebted to you for your endless knowledge, wisdom, kindness, and advice. Most of all, your warmth and guidance as a mentor helped shape me into the person I am today.",
+            author: "Danny U",
+            stars: "★★★★★"
+        }
+    ];
+
+    // 2. Inject the testimonials into the Swiper wrapper
+    const testimonialWrapper = document.getElementById('testimonial-wrapper');
+
+    testimonials.forEach(item => {
+        const slide = document.createElement('div');
+        // 'h-auto' allows the slide to stretch to match the tallest quote in the row
+        slide.className = 'swiper-slide flex flex-col items-center text-center ';
+        
+        // 'grow' on the paragraph forces the stars and author down so they always align perfectly!
+        slide.innerHTML = `
+            <img src="./assets/quote.svg" alt="quotation mark" aria-hidden="true" class="w-12 h-12 pb-4 object-contain" />
+            <p class="mb-6 text-[11px] leading-relaxed text-gray-600 ">
+                "${item.quote}"
+            </p>
+            <div class="text-[#f1c40f] mb-3 text-xl tracking-widest">${item.stars}</div>
+            <p class="font-bold text-gray-900 text-xs mb-1">${item.author}</p>
+            
+        `;
+        testimonialWrapper.appendChild(slide);
+    });
+
+    // 3. Initialize the Testimonial Swiper
+    const testimonialSwiper = new Swiper(".testimonialSwiper", {
+        autoHeight: true,
+        slidesPerView: 1,         
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 6000,          
+            disableOnInteraction: true, 
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,      
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2, 
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 3, 
+                spaceBetween: 50,
+            },
+        },
+    });
+</script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Success Coaching - College Readiness Programs</title>
+    <link rel="stylesheet" href="./assets/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+       
+        .college-title {
+            color: #000;
+            text-align: left;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #000;
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(1.8rem, 3vw, 2.5rem);
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%;
+            z-index: 13;
+            padding-left: 0.1em;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+
+       <!-- Header / Navigation -->
+    <header class="navbar bg-[#9FD2E1] flex flex-col md:flex-row justify-between items-center py-4">
+        <div class="logo flex items-center gap-2 mb-4 md:mb-0">
+            <a href="index.html" class="w-[clamp(80px,10vw,112px)] h-auto">
+                <img src="./assets/logo.png" alt="Logo">
+            </a>
+        </div>
+        
+        <nav class="flex flex-wrap justify-center items-center gap-6 md:gap-12 text-white text-sm font-semibold mb-4 md:mb-0">
+            <a href="about.html" class="navbar-text hover:text-gray-200 transition">About</a>
+            <a href="what-is-coaching.html" class="navbar-text hover:text-gray-200 transition">What is Coaching?</a>
+            
+            <!-- Services Dropdown Container -->
+            <div class="relative group">
+                <a href="services.html" class="navbar-text hover:text-gray-200 transition flex items-center gap-1 py-2">
+                    Services
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3 h-3 mt-0.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </a>
+                
+                <div class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 top-full w-56 bg-white rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 flex flex-col overflow-hidden border border-gray-100">
+                    <a href="individual-coaching.html" class="block px-5 py-3 text-sm text-gray-700 font-medium hover:bg-gray-50 hover:text-[#1c7ced] transition-colors border-b border-gray-100">
+                        Individual Coaching
+                    </a>
+                    <a href="college-readiness-programs.html" class="block px-5 py-3 text-sm text-gray-700 font-medium hover:bg-gray-50 hover:text-[#1c7ced] transition-colors">
+                        College Readiness Programs
+                    </a>
+                </div>
+            </div>
+
+            <a href="book.html" class="navbar-text hover:text-gray-200 transition">Book</a>
+            <a href="speaking.html" class="navbar-text hover:text-gray-200 transition">Speaking</a>
+            
+            <!-- Resources Dropdown Container -->
+            <div class="relative group">
+                <a href="resources.html" class="navbar-text hover:text-gray-200 transition flex items-center gap-1 py-2">
+                    Resources
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3 h-3 mt-0.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </a>
+                
+                <div class="absolute left-1/2 -translate-x-1/2 md:left-auto md:right-0 md:translate-x-0 top-full w-48 bg-white rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 flex flex-col overflow-hidden border border-gray-100">
+                    <a href="blog.html" class="block px-5 py-3 text-sm text-gray-700 font-medium hover:bg-gray-50 hover:text-[#1c7ced] transition-colors">
+                        News & Insights (Blog)
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <button class="bg-[#7ca9d6] text-white px-5 py-2.5 rounded-md font-medium text-sm hover:bg-[#6894c0] transition">
+            Schedule a Consultation
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-8 py-16 md:py-24 flex flex-col lg:flex-row items-center gap-16 relative w-[65%]">
+        <div class="flex-1 z-10 relative">
+            
+            <h1 class="college-title relative">
+                <span class="relative z-20">Transform College</span><br>
+                <span class="relative z-20">Anxiety Into Real</span><br>
+                <span class="relative z-20">Confidence</span>
+            </h1>
+            
+            <p class="text-gray-800 text-[15px] font-medium pt-6 relative z-20 pl-1 w-full md:w-[90%] leading-relaxed">
+                Getting accepted into college is the first step. These readiness programs provide targeted, short-term support to help your student build essential critical thinking skills and navigate campus resources.
+            </p>
+            
+            <div class="flex flex-wrap gap-4 pt-6 relative z-20 pl-1">
+                <button class="bg-[#b38a44] text-white px-6 py-3 rounded-md font-medium text-sm hover:bg-[#9a7538] transition">Schedule a Consultation</button>
+                <button class="bg-[#b38a44] text-white px-6 py-3 rounded-md font-medium text-sm hover:bg-[#9a7538] transition">Schedule a Consultation</button>
+            </div>
+        </div>
+
+        <div class="flex-1 relative w-full flex justify-center lg:justify-end z-10">
+            <!-- Video Container -->
+            <div id="video-container" class="relative w-[clamp(300px,44.444vw,640px)] aspect-[640/370] rounded-[30px] overflow-hidden shadow-[18px_12px_15.8px_0_rgba(0,0,0,0.55)] z-10">
+                <!-- Video Cover -->
+                <div id="video-cover" class="absolute inset-0 z-20 cursor-pointer group" onclick="playVideo()">
+                    <img src="./assets/louisyoutubeseries.png" alt="Transform College Anxiety Into Real Confidence" class="w-full h-full object-cover">
+                    <!-- Play Button -->
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="w-16 h-16 md:w-20 md:h-20 bg-white rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-7 h-7 md:w-9 md:h-9 text-[#b38a44] ml-1">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- YouTube Video (Starts Empty) -->
+                <iframe id="youtube-video" src="" title="College Readiness Programs" class="w-full h-full" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+            <!-- Red Decorative SVG -->
+            <img src="./assets/Ellipse 1.svg" alt="" aria-hidden="true" class="absolute -bottom-12 -left-14 w-36 md:w-48 lg:w-52 z-0 hidden md:block">
+            <!-- Yellow Decorative SVG -->
+            <img src="./assets/Ellipse 2.svg" alt="" aria-hidden="true" class="absolute -bottom-10 -left-10 w-40 md:w-48 lg:w-56 z-0 hidden md:block">
+            <!-- Blue Decorative SVG -->
+            <img src="./assets/Rectangle 289.svg" alt="" aria-hidden="true" class="absolute -top-10 -right-10 w-32 md:w-36 lg:w-40 z-0 hidden md:block">
+        </div>
+    </section>
+
+    <!-- Testimonials (Swiper Carousel) -->
+    <section class="max-w-7xl mx-auto px-8 py-8 mb-12 overflow-hidden border-b border-gray-100">
+        <div class="swiper testimonialSwiper pb-12"> 
+            <div class="swiper-wrapper" id="testimonial-wrapper">
+                <!-- Testimonial slides will be injected here by JavaScript -->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Main Content Split Section -->
+    <section class="max-w-7xl mx-auto px-8 py-12 flex flex-col lg:flex-row gap-12 lg:gap-16 mb-16">
+        
+        <!-- Left Text Content -->
+        <div class="flex-1 text-gray-800 text-[15px] space-y-6 leading-relaxed md:pr-8">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-black">College Readiness Programs</h2>
+            
+            <p>Transitioning to college requires more than just showing up on move-in day—it requires a proactive academic mindset. These focused, short-term programs are built to assess your student's preparation and develop essential skills before they even step foot into a lecture hall.</p>
+            
+            <p>The College Launchpad provides a focused, one-time readiness assessment to eliminate the guesswork of the freshman transition. Through a detailed survey and a dedicated one-on-one session, we create a custom written plan that highlights their strengths, predicts potential friction points, and identifies vital campus resources.</p>
+            
+            <p>For a deeper academic foundation, the Ready, Set, Think Bootcamp offers a four-week course designed to build rigorous academic habits. Working directly from my book, we tackle reflection exercises that equip your student with the concrete reading, writing, research, and critical thinking tools needed to succeed at the college level.</p>
+        </div>
+
+        <!-- Right Blue Cards -->
+        <div class="w-full lg:w-[600px] grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- Card 1 -->
+            <div class="bg-[#41a2f3] text-white p-8 rounded-xl shadow-lg flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-medium mb-3">College Launchpad</h3>
+                    <p class="mb-6 opacity-90 text-[13px] leading-relaxed">A one-time readiness assessment. Your student completes a detailed survey about their preparation and life experience, then spends an hour with me going deep on what it turned up. I follow that with a written plan: where they're genuinely well-prepared, where they may run into friction, and specific campus resources worth connecting with before they even arrive on campus.</p>
+                </div>
+                <button class="bg-white text-gray-800 px-6 py-2.5 rounded-md font-medium text-sm hover:bg-gray-100 transition w-max shadow-sm mt-4">Book Launchpad</button>
+            </div>
+            
+            <!-- Card 2 -->
+            <div class="bg-[#3091e6] text-white p-8 rounded-xl shadow-lg flex flex-col justify-between">
+                <div>
+                    <h3 class="text-2xl font-medium mb-3 leading-tight">Ready, Set, Think Bootcamp</h3>
+                    <p class="mb-6 opacity-90 text-[13px] leading-relaxed mt-3">A four-session course built directly from my book, Thinking Critically in College. Over four weeks, we work through the book's reflection questions and exercises together — one-on-one, or in a small group of friends. By the end, your student will have concrete tools for reading, writing, research, and thinking at a college level.</p>
+                </div>
+                <button class="bg-white text-gray-800 px-6 py-2.5 rounded-md font-medium text-sm hover:bg-gray-100 transition w-max shadow-sm mt-4">Book Bootcamp</button>
+            </div>
+            
+        </div>
+    </section>
+
+<!-- JavaScript -->
+<script>
+    function playVideo() {
+        const cover = document.getElementById('video-cover');
+        const iframe = document.getElementById('youtube-video');
+        
+        // Injects URL on click and immediately starts playing
+        iframe.src = "https://www.youtube.com/embed/duoTobUJOrI?autoplay=1";
+        
+        cover.style.display = 'none';
+    }
+</script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+ // 1. Define your testimonials data here
+    const testimonials = [
+        {
+            quote: "Your coaching has been invaluable. You have a remarkable ability to identify and address the interconnected social, psychological, and academic challenges that students face. You have helped her cultivate that very sense of curiosity and confidence we hoped for. It is clear to us that the foundation you are helping her build will lead to a healthy and sustainable relationship with academics for years to come. We would not hesitate to recommend you to any family. You are more than a coach; you are a true mentor who empowers students to thrive in all aspects of their lives.",
+            author: "Mother of a UC-Berkeley student",
+            stars: "★★★★★"
+        },
+        {
+            quote: "Louis was (and continues to be) a compassionate and empathic mentor and advisor. During a particularly tough time. . . Louis was helpful, caring and understanding. I will never forget how carefully he listened to me and how kind his words were during that time.",
+            author: "Kate K",
+            stars: "★★★★★"
+        },
+        {
+            quote: "You always put me at ease and offered sage and realistic advice.",
+            author: "Ainsley T",
+            stars: "★★★★★"
+        },
+        {
+            quote: "With Louis, I can see what it means to put moral ideals into practice. . .what it means to be an advisor and teacher and moral guide.",
+            author: "Geoffrey C",
+            stars: "★★★★★"
+        },
+        {
+            quote: "During a time of life when I was often lost in abstractions, you consistently and gently pointed me back to my relationships with people and to being part of a community.",
+            author: "Dan K ",
+            stars: "★★★★★"
+        },
+        {
+            quote: "I will always be indebted to you for your endless knowledge, wisdom, kindness, and advice. Most of all, your warmth and guidance as a mentor helped shape me into the person I am today.",
+            author: "Danny U",
+            stars: "★★★★★"
+        }
+    ];
+
+    // 2. Inject the testimonials into the Swiper wrapper
+    const testimonialWrapper = document.getElementById('testimonial-wrapper');
+
+    testimonials.forEach(item => {
+        const slide = document.createElement('div');
+        // 'h-auto' allows the slide to stretch to match the tallest quote in the row
+        slide.className = 'swiper-slide flex flex-col items-center text-center ';
+        
+        // 'grow' on the paragraph forces the stars and author down so they always align perfectly!
+        slide.innerHTML = `
+            <img src="./assets/quote.svg" alt="quotation mark" aria-hidden="true" class="w-12 h-12 pb-4 object-contain" />
+            <p class="mb-6 text-[11px] leading-relaxed text-gray-600 ">
+                "${item.quote}"
+            </p>
+            <div class="text-[#f1c40f] mb-3 text-xl tracking-widest">${item.stars}</div>
+            <p class="font-bold text-gray-900 text-xs mb-1">${item.author}</p>
+            
+        `;
+        testimonialWrapper.appendChild(slide);
+    });
+
+    // 3. Initialize the Testimonial Swiper
+    const testimonialSwiper = new Swiper(".testimonialSwiper", {
+        autoHeight: true,
+        slidesPerView: 1,         
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 6000,          
+            disableOnInteraction: true, 
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,      
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2, 
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 3, 
+                spaceBetween: 50,
+            },
+        },
+    });
+</script>
+</body>
+>>>>>>> origin/main
+</html>

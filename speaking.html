@@ -1,0 +1,1022 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Success Coaching</title>
+    <link rel="stylesheet" href="./assets/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+       
+        
+        .about-title {
+  color: #000;
+  text-align: left;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.5rem, 2.8vw, 2.5rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 2px;
+  z-index: 13;
+  padding-left: 0.3em;
+}
+
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+   <!-- Header / Navigation -->
+    <header class="navbar bg-[#9FD2E1] flex flex-col md:flex-row justify-between items-center py-4">
+        <div class="logo flex items-center gap-2 mb-4 md:mb-0">
+            <a href="index.html" class="w-[clamp(80px,10vw,112px)] h-auto">
+                <img src="./assets/logo.png" alt="Logo">
+            </a>
+        </div>
+        
+        <nav class="flex flex-wrap justify-center items-center gap-6 md:gap-12 text-white text-sm font-semibold mb-4 md:mb-0">
+            <a href="about.html" class="navbar-text hover:text-gray-200 transition">About</a>
+            <a href="what-is-coaching.html" class="navbar-text hover:text-gray-200 transition">What is Coaching?</a>
+            
+            <!-- Services Dropdown Container -->
+            <div class="relative group">
+                <a href="services.html" class="navbar-text hover:text-gray-200 transition flex items-center gap-1 py-2">
+                    Services
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3 h-3 mt-0.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </a>
+                
+                <div class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 top-full w-56 bg-white rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 flex flex-col overflow-hidden border border-gray-100">
+                    <a href="individual-coaching.html" class="block px-5 py-3 text-sm text-gray-700 font-medium hover:bg-gray-50 hover:text-[#1c7ced] transition-colors border-b border-gray-100">
+                        Individual Coaching
+                    </a>
+                    <a href="college-readiness-programs.html" class="block px-5 py-3 text-sm text-gray-700 font-medium hover:bg-gray-50 hover:text-[#1c7ced] transition-colors">
+                        College Readiness Programs
+                    </a>
+                </div>
+            </div>
+
+            <a href="book.html" class="navbar-text hover:text-gray-200 transition">Book</a>
+            <a href="speaking.html" class="navbar-text hover:text-gray-200 transition">Speaking</a>
+            
+            <!-- Resources Dropdown Container -->
+            <div class="relative group">
+                <a href="resources.html" class="navbar-text hover:text-gray-200 transition flex items-center gap-1 py-2">
+                    Resources
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3 h-3 mt-0.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </a>
+                
+                <div class="absolute left-1/2 -translate-x-1/2 md:left-auto md:right-0 md:translate-x-0 top-full w-48 bg-white rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 flex flex-col overflow-hidden border border-gray-100">
+                    <a href="blog.html" class="block px-5 py-3 text-sm text-gray-700 font-medium hover:bg-gray-50 hover:text-[#1c7ced] transition-colors">
+                        News & Insights (Blog)
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <button class="bg-[#7ca9d6] text-white px-5 py-2.5 rounded-md font-medium text-sm hover:bg-[#6894c0] transition">
+            Schedule a Consultation
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-8 py-16 md:py-24 flex flex-col lg:flex-row items-center gap-16 relative ">
+        <div class="flex-1  z-10 relative"> <!-- Added 'relative' here -->
+    
+    
+    <h1 class="about-title relative"> <!-- Added 'relative' here -->
+        <!-- Pulled above the SVG -->
+        <span class="relative z-20">Invite Louis to</span><br>
+        
+        <!-- Left static so the SVG (z-10) loops OVER it -->
+        <span>Speak at Your</span><br>
+        
+        <!-- Pulled above the SVG (replaced inline style with Tailwind z-20) -->
+        <span class="relative z-20">School or Event</span>
+    </h1>
+    
+    <!-- Pulled above the SVG -->
+    <p class="text-black-400 text-lg md:text-xl font-medium pt-4 relative z-20 pl-2.5" style="width: 90%;">
+       Bring expert insights on student motivation, navigating the college transition, and overcoming academic obstacles to your next event or workshop.
+    </p>
+    
+    <!-- Pulled above the SVG -->
+    <div class="flex flex-wrap gap-4 pt-4 relative z-20">
+        <button class="bg-[#b38a44] text-white px-6 py-3 rounded-md font-medium hover:bg-[#9a7538] transition">Schedule a Consultation</button>
+        <button class="bg-[#b38a44] text-white px-6 py-3 rounded-md font-medium hover:bg-[#9a7538] transition">Schedule a Consultation</button>
+    </div>
+</div>
+        <div class="flex-1 relative w-full flex justify-center lg:justify-end z-10">
+
+   <!-- Video Container -->
+<div
+    id="video-container"
+    class="relative w-[clamp(300px,44.444vw,640px)] aspect-[640/370] rounded-[30px] overflow-hidden shadow-[18px_12px_15.8px_0_rgba(0,0,0,0.55)] z-10"
+>
+
+    <!-- Video Cover -->
+    <div
+        id="video-cover"
+        class="absolute inset-0 z-20 cursor-pointer group"
+        onclick="playVideo()"
+    >
+
+        <!-- Cover Image -->
+        <img
+            src="./assets/ps_ct_experttalk_louis-1080p - frame at 3m32s.jpg"
+            alt="About the Author"
+            class="w-full h-full object-cover"
+        >
+
+        Play Button
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-16 h-16 md:w-20 md:h-20 bg-white rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-7 h-7 md:w-9 md:h-9 text-[#b38a44] ml-1"
+                >
+                    <path d="M8 5v14l11-7z"/>
+                </svg>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- YouTube Video -->
+    <iframe
+        id="youtube-video"
+        src=""
+        title="About the Author"
+        class="w-full h-full object-cover"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+
+</div>
+
+
+
+<!-- Red Decorative SVG -->
+    <img
+        src="./assets/Ellipse 1.svg"
+        alt=""
+        aria-hidden="true"
+        class="absolute -bottom-12 -left-14 w-36 md:w-48 lg:w-52 z-0 hidden md:block"
+    >
+    <!-- Yellow Decorative SVG -->
+    <img
+        src="./assets/Ellipse 2.svg"
+        alt=""
+        aria-hidden="true"
+        class="absolute -bottom-10 -left-10 w-40 md:w-48 lg:w-56 z-0 hidden md:block"
+    >
+
+    <!-- Blue Decorative SVG -->
+    <img
+        src="./assets/Rectangle 289.svg"
+        alt=""
+        aria-hidden="true"
+        class="absolute -top-10 -right-10 w-32 md:w-36 lg:w-40 z-0 hidden md:block"
+    >
+
+</div>
+</section>
+
+
+<!-- Press & Media Split Track -->
+<section class="max-w-7xl mx-auto px-8 py-16 md:py-24">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+        
+        <!-- ========================================== -->
+        <!-- LEFT TRACK: IN THE PRESS -->
+        <!-- ========================================== -->
+        <div>
+            <div class="flex items-center justify-between mb-8 pb-4 border-b-2 border-gray-100">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 font-['Poppins']">In the <span class="text-[#1c7ced]">Press</span></h2>
+                <button onclick="toggleList('press')" id="press-btn" class="text-gray-500 hover:text-[#1c7ced] text-sm font-medium transition cursor-pointer bg-transparent border-none">See all</button>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                
+                <!-- Press Items (1-17) -->
+                <!-- Note: The first 3 are visible. The rest have the 'hidden press-item' classes -->
+                
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Kirkus Review</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Thinking Critically in College: The Essential Handbook for Student Success</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Newsweek</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Look to the Liberal Arts to Lower the Temperature of Campus Culture Wars</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Jewish Journal</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Thinking about Thinking</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">University Business</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">How Colleges are Failing Our Students</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Inside Higher Ed</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Early and Often: Teaching Critical Thinking Skills for Student Success</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">The College Fix</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Stanford Dean’s New Book Helps Undergrads Learn to Think Critically</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">The Teaching Professor</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Five Ways to Help Your Students Become Better Critical Thinkers</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">eCampus News</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Four Ways to Enhance Your Critical Thinking Skills</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Sonoma Family Life</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Get Smart About College: How to Make a Wise Choice</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Journal of Continuing Education in Nursing</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">What’s More Critical to Nursing than Thinking Critically?</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Just the News</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Amid rise of AI, polarization, intolerance, ex-prof hopes to reinstill critical thinking in students</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Inside Higher Ed</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">The Beating Heart of Gen Ed</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Business Insider</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">How to Choose the Right College</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">J Weekly</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Critical thinking: Embedded in Judaism, desperately needed in society</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Inside Higher Ed</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">If We Want Free Speech, We Need to Teach It</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">LINK for Counselors</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">How to Help your Students Succeed Academically in College</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">LINK for Counselors</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">A College Education is a Lot More Than a Ticket.</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- RIGHT TRACK: MEDIA & PODCASTS -->
+        <!-- ========================================== -->
+        <div>
+            <div class="flex items-center justify-between mb-8 pb-4 border-b-2 border-gray-100">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 font-['Poppins']">Media & <span class="text-[#b38a44]">Podcasts</span></h2>
+                <button onclick="toggleList('media')" id="media-btn" class="text-gray-500 hover:text-[#b38a44] text-sm font-medium transition cursor-pointer bg-transparent border-none">See all</button>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                
+                <!-- Media Items (1-17) -->
+                <!-- Note: The first 3 are visible. The rest have the 'hidden media-item' classes -->
+                
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Issues and Ideas with Chris DeBello</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">The Importance of Teaching Critical Thinking in College</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Radio Free Hillsdale</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Dr. Louis Newman on Thinking Critically in College</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">IlluminatED Higher Education Podcast</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Thinking Critically in College with Louis Newman</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">WRGC</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Thinking Critically in College with Louis Newman: Focus On The Community</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Your College-Bound Kid Podcast</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Dr. Louis Newman: Thinking Critically in College Interview</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Spotify Podcast with Ann Garcia</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">A Roadmap for Student Success</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">College Admissions in a Changing World Podcast</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">How to Choose a College Intelligently by Using the Right Data</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Webinar Jam</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Find Your Best Fit Colleges with Kate Stone</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">The Shift Podcast</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">What Students Don’t Know Going into College that They Need to Know</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Hedagogy with Steve Pearlman</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Thinking Critically in College with Louis Newman</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Carleton Connects</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Louis Newman and How to Make the Most of College</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">How to Get the Most Out of College Podcast</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Uncovering the Hidden Curriculum with Louis Newman</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Parent Venture</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Thinking Critically in College: Essential Tools for Student Success</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Shift Podcast</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">How to Make the Most of Your College Experience Academically</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Tests and the Rest</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">What Does Thinking Critically In College Mean?</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Stanford Continuing Studies</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">A Smarter Way to Think About College</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Shift Podcast</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Preparing in High School for College</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Toggle Script -->
+<script>
+    function toggleList(type) {
+        // Find all elements that match the specific type and skip the first 3 (which are always visible)
+        const items = document.querySelectorAll(`.${type}-item.hidden, .${type}-item[data-expanded="true"]`);
+        const btn = document.getElementById(`${type}-btn`);
+        let isExpanding = btn.innerText === "See all";
+
+        items.forEach(item => {
+            if (isExpanding) {
+                // Show items
+                item.classList.remove('hidden');
+                item.setAttribute('data-expanded', 'true');
+            } else {
+                // Hide items
+                item.classList.add('hidden');
+                item.removeAttribute('data-expanded');
+            }
+        });
+
+        // Toggle button text
+        btn.innerText = isExpanding ? "Show less" : "See all";
+    }
+
+    function playVideo() {
+        const cover = document.getElementById('video-cover');
+        const iframe = document.getElementById('youtube-video');
+
+        iframe.src = "assets/ps_ct_experttalk_louis-1080p.mp4"; // Add autoplay parameter
+
+        cover.style.display = 'none';
+    }
+</script>
+<!-- Swiper JS -->
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Success Coaching</title>
+    <link rel="stylesheet" href="./assets/index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+       
+        
+        .about-title {
+  color: #000;
+  text-align: left;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.5rem, 2.8vw, 2.5rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 2px;
+  z-index: 13;
+  padding-left: 0.3em;
+}
+
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+   <!-- Header / Navigation -->
+    <header class="navbar bg-[#9FD2E1] flex flex-col md:flex-row justify-between items-center py-4">
+        <div class="logo flex items-center gap-2 mb-4 md:mb-0">
+            <a href="index.html" class="w-[clamp(80px,10vw,112px)] h-auto">
+                <img src="./assets/logo.png" alt="Logo">
+            </a>
+        </div>
+        
+        <nav class="flex flex-wrap justify-center items-center gap-6 md:gap-12 text-white text-sm font-semibold mb-4 md:mb-0">
+            <a href="about.html" class="navbar-text hover:text-gray-200 transition">About</a>
+            <a href="what-is-coaching.html" class="navbar-text hover:text-gray-200 transition">What is Coaching?</a>
+            
+            <!-- Services Dropdown Container -->
+            <div class="relative group">
+                <a href="services.html" class="navbar-text hover:text-gray-200 transition flex items-center gap-1 py-2">
+                    Services
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3 h-3 mt-0.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </a>
+                
+                <div class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 top-full w-56 bg-white rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 flex flex-col overflow-hidden border border-gray-100">
+                    <a href="individual-coaching.html" class="block px-5 py-3 text-sm text-gray-700 font-medium hover:bg-gray-50 hover:text-[#1c7ced] transition-colors border-b border-gray-100">
+                        Individual Coaching
+                    </a>
+                    <a href="college-readiness-programs.html" class="block px-5 py-3 text-sm text-gray-700 font-medium hover:bg-gray-50 hover:text-[#1c7ced] transition-colors">
+                        College Readiness Programs
+                    </a>
+                </div>
+            </div>
+
+            <a href="book.html" class="navbar-text hover:text-gray-200 transition">Book</a>
+            <a href="speaking.html" class="navbar-text hover:text-gray-200 transition">Speaking</a>
+            
+            <!-- Resources Dropdown Container -->
+            <div class="relative group">
+                <a href="resources.html" class="navbar-text hover:text-gray-200 transition flex items-center gap-1 py-2">
+                    Resources
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3 h-3 mt-0.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </a>
+                
+                <div class="absolute left-1/2 -translate-x-1/2 md:left-auto md:right-0 md:translate-x-0 top-full w-48 bg-white rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 flex flex-col overflow-hidden border border-gray-100">
+                    <a href="blog.html" class="block px-5 py-3 text-sm text-gray-700 font-medium hover:bg-gray-50 hover:text-[#1c7ced] transition-colors">
+                        News & Insights (Blog)
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <button class="bg-[#7ca9d6] text-white px-5 py-2.5 rounded-md font-medium text-sm hover:bg-[#6894c0] transition">
+            Schedule a Consultation
+        </button>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="max-w-7xl mx-auto px-8 py-16 md:py-24 flex flex-col lg:flex-row items-center gap-16 relative ">
+        <div class="flex-1  z-10 relative"> <!-- Added 'relative' here -->
+    
+    
+    <h1 class="about-title relative"> <!-- Added 'relative' here -->
+        <!-- Pulled above the SVG -->
+        <span class="relative z-20">Invite Louis to</span><br>
+        
+        <!-- Left static so the SVG (z-10) loops OVER it -->
+        <span>Speak at Your</span><br>
+        
+        <!-- Pulled above the SVG (replaced inline style with Tailwind z-20) -->
+        <span class="relative z-20">School or Event</span>
+    </h1>
+    
+    <!-- Pulled above the SVG -->
+    <p class="text-black-400 text-lg md:text-xl font-medium pt-4 relative z-20 pl-2.5" style="width: 90%;">
+       Bring expert insights on student motivation, navigating the college transition, and overcoming academic obstacles to your next event or workshop.
+    </p>
+    
+    <!-- Pulled above the SVG -->
+    <div class="flex flex-wrap gap-4 pt-4 relative z-20">
+        <button class="bg-[#b38a44] text-white px-6 py-3 rounded-md font-medium hover:bg-[#9a7538] transition">Schedule a Consultation</button>
+        <button class="bg-[#b38a44] text-white px-6 py-3 rounded-md font-medium hover:bg-[#9a7538] transition">Schedule a Consultation</button>
+    </div>
+</div>
+        <div class="flex-1 relative w-full flex justify-center lg:justify-end z-10">
+
+   <!-- Video Container -->
+<div
+    id="video-container"
+    class="relative w-[clamp(300px,44.444vw,640px)] aspect-[640/370] rounded-[30px] overflow-hidden shadow-[18px_12px_15.8px_0_rgba(0,0,0,0.55)] z-10"
+>
+
+    <!-- Video Cover -->
+    <div
+        id="video-cover"
+        class="absolute inset-0 z-20 cursor-pointer group"
+        onclick="playVideo()"
+    >
+
+        <!-- Cover Image -->
+        <img
+            src="./assets/ps_ct_experttalk_louis-1080p - frame at 3m32s.jpg"
+            alt="About the Author"
+            class="w-full h-full object-cover"
+        >
+
+        Play Button
+        <div class="absolute inset-0 flex items-center justify-center">
+            <div class="w-16 h-16 md:w-20 md:h-20 bg-white rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="w-7 h-7 md:w-9 md:h-9 text-[#b38a44] ml-1"
+                >
+                    <path d="M8 5v14l11-7z"/>
+                </svg>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- YouTube Video -->
+    <iframe
+        id="youtube-video"
+        src=""
+        title="About the Author"
+        class="w-full h-full object-cover"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+    </iframe>
+
+</div>
+
+
+
+<!-- Red Decorative SVG -->
+    <img
+        src="./assets/Ellipse 1.svg"
+        alt=""
+        aria-hidden="true"
+        class="absolute -bottom-12 -left-14 w-36 md:w-48 lg:w-52 z-0 hidden md:block"
+    >
+    <!-- Yellow Decorative SVG -->
+    <img
+        src="./assets/Ellipse 2.svg"
+        alt=""
+        aria-hidden="true"
+        class="absolute -bottom-10 -left-10 w-40 md:w-48 lg:w-56 z-0 hidden md:block"
+    >
+
+    <!-- Blue Decorative SVG -->
+    <img
+        src="./assets/Rectangle 289.svg"
+        alt=""
+        aria-hidden="true"
+        class="absolute -top-10 -right-10 w-32 md:w-36 lg:w-40 z-0 hidden md:block"
+    >
+
+</div>
+</section>
+
+
+<!-- Press & Media Split Track -->
+<section class="max-w-7xl mx-auto px-8 py-16 md:py-24">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
+        
+        <!-- ========================================== -->
+        <!-- LEFT TRACK: IN THE PRESS -->
+        <!-- ========================================== -->
+        <div>
+            <div class="flex items-center justify-between mb-8 pb-4 border-b-2 border-gray-100">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 font-['Poppins']">In the <span class="text-[#1c7ced]">Press</span></h2>
+                <button onclick="toggleList('press')" id="press-btn" class="text-gray-500 hover:text-[#1c7ced] text-sm font-medium transition cursor-pointer bg-transparent border-none">See all</button>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                
+                <!-- Press Items (1-17) -->
+                <!-- Note: The first 3 are visible. The rest have the 'hidden press-item' classes -->
+                
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Kirkus Review</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Thinking Critically in College: The Essential Handbook for Student Success</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Newsweek</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Look to the Liberal Arts to Lower the Temperature of Campus Culture Wars</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Jewish Journal</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Thinking about Thinking</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">University Business</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">How Colleges are Failing Our Students</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Inside Higher Ed</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Early and Often: Teaching Critical Thinking Skills for Student Success</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">The College Fix</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Stanford Dean’s New Book Helps Undergrads Learn to Think Critically</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">The Teaching Professor</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Five Ways to Help Your Students Become Better Critical Thinkers</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">eCampus News</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Four Ways to Enhance Your Critical Thinking Skills</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Sonoma Family Life</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Get Smart About College: How to Make a Wise Choice</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Journal of Continuing Education in Nursing</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">What’s More Critical to Nursing than Thinking Critically?</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Just the News</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Amid rise of AI, polarization, intolerance, ex-prof hopes to reinstill critical thinking in students</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Inside Higher Ed</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">The Beating Heart of Gen Ed</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Business Insider</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">How to Choose the Right College</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">J Weekly</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Critical thinking: Embedded in Judaism, desperately needed in society</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Inside Higher Ed</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">If We Want Free Speech, We Need to Teach It</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">LINK for Counselors</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">How to Help your Students Succeed Academically in College</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">LINK for Counselors</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">A College Education is a Lot More Than a Ticket.</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- RIGHT TRACK: MEDIA & PODCASTS -->
+        <!-- ========================================== -->
+        <div>
+            <div class="flex items-center justify-between mb-8 pb-4 border-b-2 border-gray-100">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 font-['Poppins']">Media & <span class="text-[#b38a44]">Podcasts</span></h2>
+                <button onclick="toggleList('media')" id="media-btn" class="text-gray-500 hover:text-[#b38a44] text-sm font-medium transition cursor-pointer bg-transparent border-none">See all</button>
+            </div>
+
+            <div class="flex flex-col gap-2">
+                
+                <!-- Media Items (1-17) -->
+                <!-- Note: The first 3 are visible. The rest have the 'hidden media-item' classes -->
+                
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Issues and Ideas with Chris DeBello</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">The Importance of Teaching Critical Thinking in College</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Radio Free Hillsdale</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Dr. Louis Newman on Thinking Critically in College</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">IlluminatED Higher Education Podcast</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Thinking Critically in College with Louis Newman</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">WRGC</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Thinking Critically in College with Louis Newman: Focus On The Community</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Your College-Bound Kid Podcast</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Dr. Louis Newman: Thinking Critically in College Interview</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Spotify Podcast with Ann Garcia</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">A Roadmap for Student Success</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">College Admissions in a Changing World Podcast</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">How to Choose a College Intelligently by Using the Right Data</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Webinar Jam</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Find Your Best Fit Colleges with Kate Stone</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">The Shift Podcast</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">What Students Don’t Know Going into College that They Need to Know</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Hedagogy with Steve Pearlman</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Thinking Critically in College with Louis Newman</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Carleton Connects</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Louis Newman and How to Make the Most of College</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">How to Get the Most Out of College Podcast</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Uncovering the Hidden Curriculum with Louis Newman</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Parent Venture</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Thinking Critically in College: Essential Tools for Student Success</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Shift Podcast</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">How to Make the Most of Your College Experience Academically</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Tests and the Rest</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">What Does Thinking Critically In College Mean?</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Stanford Continuing Studies</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">A Smarter Way to Think About College</h4>
+                    </div>
+                </a>
+
+                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Shift Podcast</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Preparing in High School for College</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Toggle Script -->
+<script>
+    function toggleList(type) {
+        // Find all elements that match the specific type and skip the first 3 (which are always visible)
+        const items = document.querySelectorAll(`.${type}-item.hidden, .${type}-item[data-expanded="true"]`);
+        const btn = document.getElementById(`${type}-btn`);
+        let isExpanding = btn.innerText === "See all";
+
+        items.forEach(item => {
+            if (isExpanding) {
+                // Show items
+                item.classList.remove('hidden');
+                item.setAttribute('data-expanded', 'true');
+            } else {
+                // Hide items
+                item.classList.add('hidden');
+                item.removeAttribute('data-expanded');
+            }
+        });
+
+        // Toggle button text
+        btn.innerText = isExpanding ? "Show less" : "See all";
+    }
+
+    function playVideo() {
+        const cover = document.getElementById('video-cover');
+        const iframe = document.getElementById('youtube-video');
+
+        iframe.src = "assets/ps_ct_experttalk_louis-1080p.mp4"; // Add autoplay parameter
+
+        cover.style.display = 'none';
+    }
+</script>
+<!-- Swiper JS -->
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</body>
+>>>>>>> origin/main
+</html>
