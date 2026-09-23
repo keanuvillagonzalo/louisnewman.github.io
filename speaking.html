@@ -33,7 +33,7 @@
    <!-- Header / Navigation -->
     <header class="navbar bg-[#9FD2E1] flex flex-col md:flex-row justify-between items-center py-4">
         <div class="logo flex items-center gap-2 mb-4 md:mb-0">
-            <a href="index.html" class="w-[clamp(80px,10vw,112px)] h-auto">
+            <a href="index.html" class="w-[clamp(120px,12vw,160px)] h-auto">
                 <img src="./assets/logo.png" alt="Logo">
             </a>
         </div>
@@ -81,7 +81,7 @@
             </div>
         </nav>
         
-        <button class="bg-[#7ca9d6] text-white px-5 py-2.5 rounded-md font-medium text-sm hover:bg-[#6894c0] transition">
+        <button class="bg-[#b38a44] text-white px-5 py-2.5 rounded-md font-medium text-sm hover:bg-[#9a7538] transition">
             Schedule a Consultation
         </button>
     </header>
@@ -191,8 +191,17 @@
 
 </div>
 </section>
-
-
+<!-- Testimonials (Swiper Carousel) -->
+<section class="max-w-7xl mx-auto px-8 py-8 mb-12 overflow-hidden">
+    <div class="swiper testimonialSwiper pb-12"> <!-- Added bottom padding for pagination dots -->
+        <div class="swiper-wrapper" id="testimonial-wrapper">
+            <!-- Testimonial slides will be injected here by JavaScript -->
+        </div>
+        <!-- Optional: Adds clickable dots at the bottom -->
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+ 
 <!-- Press & Media Split Track -->
 <section class="max-w-7xl mx-auto px-8 py-16 md:py-24">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
@@ -211,124 +220,131 @@
                 <!-- Press Items (1-17) -->
                 <!-- Note: The first 3 are visible. The rest have the 'hidden press-item' classes -->
                 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors press-item">
+                <a href="https://www.kirkusreviews.com/book-reviews/louis-e-newman/thinking-critically-in-college/" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors press-item">
                     <div>
                         <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Kirkus Review</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Thinking Critically in College: The Essential Handbook for Student Success</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors press-item">
+                <a href="http://www.newsweek.com/look-liberal-arts-lower-temperature-campus-culture-wars-opinion-1859231" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors press-item">
                     <div>
                         <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Newsweek</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Look to the Liberal Arts to Lower the Temperature of Campus Culture Wars</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors press-item">
+                <a href="https://jewishjournal.com/cover_story/355169/thinking-about-thinking-2/" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors press-item">
                     <div>
                         <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Jewish Journal</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Thinking about Thinking</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                <a href="https://universitybusiness.com/how-colleges-are-failing-our-students/" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
                     <div>
                         <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">University Business</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">How Colleges are Failing Our Students</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                <a href="https://www.insidehighered.com/news/2023/02/16/new-book-links-teaching-critical-thinking-student-success" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
                     <div>
                         <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Inside Higher Ed</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Early and Often: Teaching Critical Thinking Skills for Student Success</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                <a href="https://www.thecollegefix.com/stanford-deans-new-book-helps-undergrads-learn-to-think-critically/" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
                     <div>
                         <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">The College Fix</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Stanford Dean’s New Book Helps Undergrads Learn to Think Critically</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                <a href="https://www.teachingprofessor.com/topics/teaching-strategies/five-ways-to-help-your-students-become-better-critical-thinkers/?st=TPemail%3Bsc%3DTP230410%3Butm_term%3DTP230410&mailingID=4764&utm_source=ActiveCampaign&utm_medium=email&utm_content=Enabling+Students+to+Make+Meaning+%7C+Five+Ways+to+Promote+Critical+Thinking+%7C+Ethical+Issues+with+AI+in+Online+Education&utm_campaign=TPNL+-+230410+e2&vgo_ee=mybi%2FvdB%2FSFFZytbqFSYt7n2ZygL7fK4qMi4Caef%2FTV7wgDGa3DB71mg%3AAmh%2BG%2Fe5OkvAbrWhldN4ZLnTSF52v%2FYE" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
                     <div>
                         <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">The Teaching Professor</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Five Ways to Help Your Students Become Better Critical Thinkers</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                <a href="https://www.ecampusnews.com/teaching-learning/2023/04/11/4-ways-to-enhance-critical-thinking-skills/" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
                     <div>
                         <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">eCampus News</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Four Ways to Enhance Your Critical Thinking Skills</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                <a href="https://www.sonomafamilylife.com/2023/05/01/433736/the-right-questions-to-ask-a-prospective-college" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
                     <div>
                         <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Sonoma Family Life</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Get Smart About College: How to Make a Wise Choice</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                <a href="https://journals.healio.com/doi/full/10.3928/00220124-20230511-01" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
                     <div>
                         <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Journal of Continuing Education in Nursing</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">What’s More Critical to Nursing than Thinking Critically?</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                <a href="https://justthenews.com/politics-policy/education/amid-rise-ai-polarization-intolerance-ex-prof-hopes-reinstill-critical" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
                     <div>
                         <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Just the News</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Amid rise of AI, polarization, intolerance, ex-prof hopes to reinstill critical thinking in students</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                <a href="https://www.insidehighered.com/opinion/views/2023/09/11/critical-thinking-should-be-heart-gen-ed-opinion" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
                     <div>
                         <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Inside Higher Ed</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">The Beating Heart of Gen Ed</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                <a href="https://www.businessinsider.com/how-to-choose-college-campus-tour-data-2023-12" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
                     <div>
                         <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Business Insider</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">How to Choose the Right College</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                <a href="https://jweekly.com/2023/03/30/critical-thinking-embedded-in-judaism-desperately-needed-in-society/" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
                     <div>
                         <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">J Weekly</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Critical thinking: Embedded in Judaism, desperately needed in society</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                <a href="https://www.insidehighered.com/opinion/views/2024/07/18/if-we-want-free-speech-we-need-teach-it-opinion?mc_cid=4022c3bd80&mc_eid=67e69b1668" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
                     <div>
                         <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Inside Higher Ed</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">If We Want Free Speech, We Need to Teach It</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                <a href="https://bt.e-ditionsbyfry.com/publication/?m=66865&i=831931&p=40&ver=html5" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
                     <div>
                         <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">LINK for Counselors</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">How to Help your Students Succeed Academically in College</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                <a href="https://bt.e-ditionsbyfry.com/publication/?i=839845&p=14&view=issueViewer" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
                     <div>
                         <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">LINK for Counselors</p>
-                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">A College Education is a Lot More Than a Ticket.</h4>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">A College Education is a Lot More Than a Ticket</h4>
                     </div>
                 </a>
+                  <a href="https://achievable.me/exams/act/insights/the-preparation-paradox-why-most-college-advice-points-students-in-the-wrong-direction/" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden press-item">
+                    <div>
+                        <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">ACHIEVABLE</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#1c7ced] transition-colors leading-snug">Why most college advice points students in the wrong direction</h4>
+                    </div>
+                </a>
+            
             </div>
         </div>
 
@@ -346,132 +362,232 @@
                 <!-- Media Items (1-17) -->
                 <!-- Note: The first 3 are visible. The rest have the 'hidden media-item' classes -->
                 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors media-item">
+                <a href="http://www.issuesandideasradio.com/podcasts/louisnewman.mp3" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors media-item">
                     <div>
                         <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Issues and Ideas with Chris DeBello</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">The Importance of Teaching Critical Thinking in College</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors media-item">
+                <a href="https://radiofreehillsdale1017.transistor.fm/episodes/interview-dr-louis-newman-on-thinking-critically-in-college" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors media-item">
                     <div>
                         <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Radio Free Hillsdale</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Dr. Louis Newman on Thinking Critically in College</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors media-item">
+                <a href="https://illuminatedpodcast.org/episodes/113-thinking-critically-in-college-with-louis-newman-author-of-thinking-critically-in-college-the-essential-handbook-for-students-success" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors media-item">
                     <div>
                         <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">IlluminatED Higher Education Podcast</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Thinking Critically in College with Louis Newman</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                <a href="https://thinkingcritically.us/wp-content/uploads/2023/06/WRGC-NC-Focus-On-The-Community-1.mp3" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
                     <div>
                         <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">WRGC</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Thinking Critically in College with Louis Newman: Focus On The Community</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                <a href="https://thinkingcritically.us/wp-content/uploads/2023/07/Dr.-Louis-Newman-Thinking-Critically-in-College-Interview-1.mp3" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
                     <div>
                         <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Your College-Bound Kid Podcast</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Dr. Louis Newman: Thinking Critically in College Interview</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                <a href="https://open.spotify.com/episode/4iiBFgANiztaRd1PZwdAYH?si=a75d53d6ee244307&nd=1" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
                     <div>
                         <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Spotify Podcast with Ann Garcia</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">A Roadmap for Student Success</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                <a href="https://podcasts.apple.com/us/podcast/former-stanford-dean-how-to-choose-a-college/id1653472546?i=1000628630512" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
                     <div>
                         <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">College Admissions in a Changing World Podcast</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">How to Choose a College Intelligently by Using the Right Data</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                <a href="https://event.webinarjam.com/register/38/8yx1min4" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
                     <div>
                         <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Webinar Jam</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Find Your Best Fit Colleges with Kate Stone</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                <a href="https://podcasts.apple.com/us/podcast/what-students-dont-know-going-into-college-that-they/id1653472546?i=1000632573375" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
                     <div>
                         <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">The Shift Podcast</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">What Students Don’t Know Going into College that They Need to Know</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                <a href="https://podcasts.apple.com/us/podcast/thinking-critically-in-college-with-louis-newman/id1274615583?i=1000636778440" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
                     <div>
                         <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Hedagogy with Steve Pearlman</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Thinking Critically in College with Louis Newman</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                <a href="https://www.carleton.edu/alumni/connect/carleton-connects/news/carleton-connects-louis-newman-and-how-to-make-the-most-of-college/" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
                     <div>
                         <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Carleton Connects</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Louis Newman and How to Make the Most of College</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                <a href="https://podcasts.apple.com/us/podcast/uncovering-the-hidden-curriculum-with-louis-newman/id1651276318?i=1000640520923" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
                     <div>
                         <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">How to Get the Most Out of College Podcast</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Uncovering the Hidden Curriculum with Louis Newman</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                <a href="https://www.youtube.com/watch?v=B0Eo6G1jZ64" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
                     <div>
                         <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Parent Venture</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Thinking Critically in College: Essential Tools for Student Success</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                <a href="https://podcasts.apple.com/us/podcast/mega-episode-how-to-make-the-most-of-your/id1653472546?i=1000655719719" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
                     <div>
                         <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Shift Podcast</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">How to Make the Most of Your College Experience Academically</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                <a href="https://gettestbright.com/what-does-thinking-critically-in-college-mean/" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
                     <div>
                         <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Tests and the Rest</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">What Does Thinking Critically In College Mean?</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                <a href="https://vimeo.com/1058746534?share=copy" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
                     <div>
                         <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Stanford Continuing Studies</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">A Smarter Way to Think About College</h4>
                     </div>
                 </a>
 
-                <a href="#" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                <a href="https://podcasts.apple.com/us/podcast/preparing-for-college-in-high-school-what-you-can-do/id1653472546?i=1000773166638" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
                     <div>
                         <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Shift Podcast</p>
                         <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Preparing in High School for College</h4>
                     </div>
                 </a>
+                <a href="https://www.youtube.com/watch?v=d43bXyW9HaA" class="group flex items-start gap-5 p-4 -ml-4 rounded-xl hover:bg-gray-50 transition-colors hidden media-item">
+                    <div>
+                        <p class="text-xs text-[#b38a44] font-bold uppercase tracking-wider mb-1">Forum Daily News</p>
+                        <h4 class="text-base font-bold text-gray-900 group-hover:text-[#b38a44] transition-colors leading-snug">Critical Thinking in the Age of Artificial Intelligence</h4>
+                    </div>
+                </a>
+                
             </div>
         </div>
 
     </div>
 </section>
 
+      <!-- Guest Speaker Logos (Swiper Carousel) -->
+<section class="py-12 border-t border-gray-100 overflow-hidden">
+    <h3 class="text-center text-xs font-semibold tracking-widest text-gray-400 mb-8 uppercase">Guest Speaker At</h3>
+    <div class="max-w-6xl mx-auto px-4">
+        
+        <div class="swiper guestSpeakerSwiper">
+            <div class="swiper-wrapper items-center" id="guest-speaker-wrapper">
+                
+            </div>
+        </div>
+    </div>
+</section> 
+    <!-- Featured In Logos (Swiper Carousel) -->
+<section class="py-12 overflow-hidden">
+    <h3 class="text-center text-xs font-semibold tracking-widest text-gray-400 mb-8 uppercase">Featured In</h3>
+    <div class="max-w-6xl mx-auto px-4 opacity-80">
+      
+        <div class="swiper featuredLogosSwiper">
+            <div class="swiper-wrapper items-center" id="featured-logos-wrapper">
+              
+            </div>
+        </div>
+    </div>
+</section> 
+
+<!-- Footer -->
+<footer class="bg-[#9FD2E1] border-t border-white/20 pt-16 pb-8 mt-12">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                
+                <!-- Brand & Bio -->
+                <div class="space-y-4 lg:pr-6">
+                    <a href="index.html" class="block w-[clamp(80px,10vw,112px)] h-auto mb-6">
+                        <img src="./assets/logo.png" alt="Logo">
+                    </a>
+                    <p class="text-white/90 text-[14px] leading-relaxed">
+                        Louis Newman is a College Success Coach, Educational Consultant, and Author of <i>Thinking Critically in College</i>. Dedicated to helping students thrive academically and personally.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold font-['Poppins'] text-white mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-[14px] text-white/90 font-medium">
+                        <li><a href="about.html" class="hover:text-[#b38a44] transition-colors">About Louis</a></li>
+                        <li><a href="what-is-coaching.html" class="hover:text-[#b38a44] transition-colors">What is Coaching?</a></li>
+                        <li><a href="book.html" class="hover:text-[#b38a44] transition-colors">The Book</a></li>
+                        <li><a href="speaking.html" class="hover:text-[#b38a44] transition-colors">Speaking</a></li>
+                        <li><a href="blog.html" class="hover:text-[#b38a44] transition-colors">News & Insights (Blog)</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-bold font-['Poppins'] text-white mb-6">Services</h4>
+                    <ul class="space-y-3 text-[14px] text-white/90 font-medium">
+                        <li><a href="individual-coaching.html" class="hover:text-[#b38a44] transition-colors">Individual Coaching</a></li>
+                        <li><a href="college-readiness-programs.html" class="hover:text-[#b38a44] transition-colors">College Readiness Programs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & CTA -->
+                <div>
+                    <h4 class="text-lg font-bold font-['Poppins'] text-white mb-6">Connect</h4>
+                    <ul class="space-y-3 text-[14px] text-white/90 font-medium mb-6">
+                        <li>
+                            <a href="mailto:coach@thinkingcritically.us" class="flex items-center gap-2 hover:text-[#b38a44] transition-colors break-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 shrink-0">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                                </svg>
+                                coach@thinkingcritically.us
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="inline-block bg-[#b38a44] text-white px-6 py-2.5 rounded-md font-medium text-sm hover:bg-[#9a7538] transition shadow-sm">
+                        Schedule a Consultation
+                    </a>
+                </div>
+                
+            </div>
+
+            <!-- Bottom Copyright Bar -->
+            <div class="border-t border-white/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/80 font-medium">
+                <p>&copy; <span id="year"></span> Louis Newman. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="privacy-policy.html" class="hover:text-[#b38a44] transition-colors">Privacy Policy</a>
+                    <a href="terms-of-service.html" class="hover:text-[#b38a44] transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
 <!-- Toggle Script -->
 <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
     function toggleList(type) {
         // Find all elements that match the specific type and skip the first 3 (which are always visible)
         const items = document.querySelectorAll(`.${type}-item.hidden, .${type}-item[data-expanded="true"]`);
@@ -501,6 +617,257 @@
         iframe.src = "assets/ps_ct_experttalk_louis-1080p.mp4"; // Add autoplay parameter
 
         cover.style.display = 'none';
+    }
+
+</script>
+<!-- JavaScript -->
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    function toggleList(type) {
+        const items = document.querySelectorAll(`.${type}-item.hidden, .${type}-item[data-expanded="true"]`);
+        const btn = document.getElementById(`${type}-btn`);
+        let isExpanding = btn.innerText === "See all";
+
+        items.forEach(item => {
+            if (isExpanding) {
+                item.classList.remove('hidden');
+                item.setAttribute('data-expanded', 'true');
+            } else {
+                item.classList.add('hidden');
+                item.removeAttribute('data-expanded');
+            }
+        });
+        btn.innerText = isExpanding ? "Show less" : "See all";
+    }
+
+    function playVideo() {
+        const cover = document.getElementById('video-cover');
+        const iframe = document.getElementById('youtube-video');
+        iframe.src = "assets/ps_ct_experttalk_louis-1080p.mp4"; // Adjust path if needed
+        cover.style.display = 'none';
+    }
+</script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    // ==========================================
+    // 1. Featured Logos Swiper
+    // ==========================================
+    const folderPath = './assets/Logos_Archive'; 
+    const logos = [
+        { file: '/Inside_Higher_Ed_Logo.png', size: 'h-16 md:h-20' , alt: 'Inside Higher Ed Logo'},
+        { file: '/Parent_Venture_Logo.png', size: 'h-20 md:h-24' , alt: 'Parent Venture Logo'}, 
+        { file: '/Kirkus_Reviews_Logo.png', size: 'h-16 md:h-20' , alt: 'Kirkus Reviews Logo'},
+        { file: '/Red_Block_N_Logo.png', size: 'h-16 md:h-20' , alt: 'Newsweek Logo'}, 
+        { file: '/Business_Insider_Logo.png', size: 'h-16 md:h-20' , alt: 'Business Insider Logo'},
+        { file: '/University_Business_UB_Logo.png', size: 'h-24 md:h-28' , alt: 'University Business UB Logo'}, 
+        { file: '/LINK_for_Counselors_Logo.png', size: 'h-8 md:h-10' , alt: 'LINK for Counselors Logo'} 
+    ];
+
+    const featuredWrapper = document.getElementById('featured-logos-wrapper');
+    if (featuredWrapper) {
+        logos.forEach(logo => {
+            const slide = document.createElement('div');
+            slide.className = 'swiper-slide flex justify-center items-center h-full';
+            slide.innerHTML = `<img src="${folderPath}${logo.file}" alt="${logo.alt}" class="${logo.size} object-contain w-auto">`;
+            featuredWrapper.appendChild(slide);
+        });
+
+        const featuredSwiper = new Swiper(".featuredLogosSwiper", {
+            slidesPerView: 2,         
+            spaceBetween: 30,
+            alignItems: 'center', 
+            loop: true,               
+            autoplay: {
+                delay: 2500,          
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: { slidesPerView: 3, spaceBetween: 40 },
+                768: { slidesPerView: 4, spaceBetween: 40 },
+                1024: { slidesPerView: 5, spaceBetween: 50 },
+            },
+        });
+    }
+
+    // ==========================================
+    // 2. Guest Speaker College Logos Swiper
+    // ==========================================
+    const collegeFolderPath = './assets/Logos_Archive/Colleges'; 
+    const collegeLogos = [
+        { file: '/Boston_University_Logo.png', size: 'h-12 md:h-14', alt: 'Boston University' },
+        { file: '/University_of_Miami_Logo.png', size: 'h-14 md:h-16', alt: 'University of Miami' },
+        { file: '/Dartmouth_College_Logo.png', size: 'h-14 md:h-20', alt: 'Dartmouth College' },
+        { file: '/University_of_Pennsylvania_Crest.png', size: 'h-14 md:h-20', alt: 'University of Pennsylvania' },
+        { file: '/Stanford_University_Logo.png', size: 'h-14 md:h-20', alt: 'Stanford University' },
+        { file: '/Alakhawayn University.jpeg', size: 'h-14 md:h-20', alt: 'Alakhawayn University' },
+        { file: '/Centre College Logo.jpg', size: 'h-14 md:h-20', alt: 'Centre College' },
+        { file: '/Illinois-Board-of-Higher-Education-Faculty-Advisory-Council-Logo.jpeg', size: 'h-16 md:h-24', alt: 'Illinois Board of Higher Education Faculty Advisory Council'},
+        { file: '/Madisonville_Community_College-Logo.jpg', size: 'h-16 md:h-24', alt: 'Madisonville Community College'},
+        { file: '/Stanford_University_Logo.png', size: 'h-14 md:h-20', alt: 'Stanford University' },
+        { file: '/University of Central Florida.png', size: 'h-14 md:h-20', alt: 'University of Central Florida' },
+        { file: '/University of Wisconsin La Crosse.png', size: 'h-14 md:h-20', alt: 'University of Wisconsin La Crosse' },
+        { file: '/Washington and Lee University.jpg', size: 'h-14 md:h-20', alt: 'Washington and Lee University'},
+        { file: '/Carleton_College_Seal.png', size: 'h-16 md:h-24', alt: 'Carleton College' },
+        { file: '/Villanova_University_Seal.png', size: 'h-16 md:h-24', alt: 'Villanova University' },
+        { file: '/Vanderbilt_University_Seal.png', size: 'h-16 md:h-24', alt: 'Vanderbilt University' },
+        { file: '/Haverford College.png', size: 'h-16 md:h-24', alt: 'Haverford College' },
+        { file: '/University of Virginia Logo.jpg', size: 'h-16 md:h-24', alt: 'University of Virginia' },
+        { file: '/Clark_University_Logo.png', size: 'h-16 md:h-24', alt: 'Clark University' },
+        { file: '/Swarthmore College_Logo.png', size: 'h-16 md:h-24', alt: 'Swarthmore College' },
+        { file: '/Georgetown_University_Logo.png', size: 'h-16 md:h-24', alt: 'Georgetown University' }
+    ];
+
+    const guestWrapper = document.getElementById('guest-speaker-wrapper');
+    if (guestWrapper) {
+        collegeLogos.forEach(logo => {
+            const slide = document.createElement('div');
+            slide.className = 'swiper-slide flex justify-center items-center h-full';
+            slide.innerHTML = `<img src="${collegeFolderPath}${logo.file}" alt="${logo.alt}" class="${logo.size} object-contain w-auto">`;
+            guestWrapper.appendChild(slide);
+        });
+
+        const guestSwiper = new Swiper(".guestSpeakerSwiper", {
+            slidesPerView: 3,         
+            spaceBetween: 30,
+            alignItems: 'center',
+            loop: true,               
+            autoplay: {
+                delay: 3000,          
+                disableOnInteraction: false,
+                reverseDirection: false 
+            },
+            breakpoints: {
+                640: { slidesPerView: 4, spaceBetween: 40 },
+                768: { slidesPerView: 5, spaceBetween: 40 },
+                1024: { slidesPerView: 6, spaceBetween: 50 },
+            },
+        });
+    }
+
+    // ==========================================
+    // 3. Testimonials Swiper
+    // ==========================================
+    const testimonials = [
+        {
+            quote: "Louis Newman is a compelling public speaker, who is able to introduce students to the core concepts of critical thinking in a manner that is both clear and accessible. His many years of experience working with undergraduates comes through in the ease with which he is able to speak and connect with them. We are grateful for the time he spent with the members of the Echols Scholars Program.",
+            author: "Karl Shuve",
+            title: "Director, Echols Scholars Program at UVA",
+            stars: "★★★★★"
+        },
+        {
+            quote: "We had Dr. Newman visit during our three-day end of year faculty conference, and many faculty commented that his presentation was amazing. In fact, his talk was the #1 choice on the event evaluations as “most useful part of the conference.",
+            author: "Kevin Yee",
+            title: "Director, Faculty Center for Teaching & Learning at UCF",
+            stars: "★★★★★"
+        },
+        {
+            quote: "While many experts offer advice about college admission, Professor Louis Newman does something revolutionary: he tells us how to help students succeed in college. In his outstanding webinar, Dr. Newman describes the importance of developing critical thinking skills, not just as a means of academic success, but to prepare young people to become engaged, lifelong learners and productive members of society.",
+            author: "Charlene Margot",
+            title: "Co-Founder and CEO, The Parent Venture",
+            stars: "★★★★★"
+        },
+        {
+            quote: "Louis' presentation as part of the Bay Area Case Studies program was candid, thoughtful, informative, and funny. Our audience of Silicon Valley parents gained tremendous insights about conducting a more intentional college search, building the skills to thrive as a college student, and most importantly, redefining success. From the start to the finish of our event planning process, Louis was wonderfully collaborative and collegial.",
+            author: "Joel Dobben",
+            title: "Director of College Counseling, Sacred Heart Schools, Atherton, CA",
+            stars: "★★★★★"
+        },
+        {
+            quote: "Thank you so much, Professor Newman, for such an amazing workshop series on Critical Thinking. Our faculty at Al Akhawayn University felt extremely engaged in such an inspiring learning journey. Your innovative approach made this experience insightful, fruitful, and impactful.",
+            author: "Karim Moustaghfir",
+            title: "AVP for 21st Century Learning Innovation & Faculty Development, Al Akhawayn University in Ifrane (Morocco)",
+            stars: "★★★★★"
+        },
+        {
+            quote: "Thank you so very much for speaking with our seniors as they head off to college in the fall. Your advice and tips are invaluable as they transition from high school to college and you highlighted several concrete and attainable ways they can be productive and successful college students. It's hard to imagine how different college might be from high school, but you helped them feel more confident and comfortable about the uncertainty ahead of them.",
+            author: "Anna Takahashi",
+            title: "Director of College Counseling, Eastside College Prep, Palo Alto, CA",
+            stars: "★★★★★"
+        },
+        {
+            quote: "Louis Newman's workshop was incredibly informative and insightful for our incoming college freshmen. Louis delivered invaluable knowledge about succeeding in college that our students hadn't heard before, and he delivered it so accessibly. We are so grateful they could gain this knowledge from Louis and wholeheartedly recommend this workshop for other college students.",
+            author: "Izzy Stork",
+            title: "College Success Senior Manager at Minds Matter, NYC",
+            stars: "★★★★★"
+        },
+        {
+            quote: "You did a masterful job of getting advisers to articulate their most important concerns and leading a probing, productive conversation around their specific concerns. Thanks, too, for the excellent presentation you gave to students--a highly engaging and well-organized talk that met students where they are, prompted them to reflect on the core purposes of college education, and gave them concrete suggestions on how to accomplish those purposes.",
+            author: "Andrew Bove",
+            title: "Associate Director of Academic Advising, Villanova University",
+            stars: "★★★★★"
+        },
+        {
+            quote: "We thoroughly enjoyed welcoming Louis to Haverford. He clearly spent a tremendous amount of time preparing materials that were relevant both to mentors and students. Students lined up after the presentation to ask him questions, which is a testament to his deep knowledge and engaging presentation style.",
+            author: "Kelly Wilcox",
+            title: "Dean of Student Success, Haverford College ",
+            stars: "★★★★★"
+        },
+        {
+            quote: "Dr. Newman’s timely message to “put critical thinking at the center of our work” challenged us as institutional leaders, faculty members, and advisors to not abandon our calling. The value proposition of higher education is to provide our students the best opportunity to explore, ask questions, and learn to think critically. Technologies will change, but good thinking skills will last a lifetime.",
+            author: "Dr. Kathi Kern",
+            title: "Senior Vice Provost of Education, University of Miami",
+            stars: "★★★★★"
+        },
+        {
+            quote: "Thank You, Dr. Newman! We’re grateful to you for delivering two outstanding presentations, one for students and another for our faculty and staff. Attendees praised your engaging style, thoughtful answers, and practical strategies for teaching critical thinking. You reminded us that critical thinking does not happen by osmosis; it must be intentionally taught and practiced. Your book Thinking Critically in College has been an impactful resource that shows how to ensure critical thinking, not just hope for it. Your work has left a lasting impact- inspiring our community to approach dialogue and learning with greater intentionality.",
+            author: "Ashley S. Nowak",
+            title: "Director, Center for Civil Dialogue and Civic Engagement  University of Wisconsin—La Crosse",
+            stars: "★★★★★"
+        },
+        {
+            quote: "I am deeply grateful that you shared your insights, research, and experiences facilitating critical thinking. Your book is like a pedagogical map, providing steps for educators to navigate the cognitive geography of young minds. Not only did you impact our faculty, but also our administration and our student peer educators. Thank you!!",
+            author: "JT Torres",
+            title: "Director, Harte Center for Teaching and Learning, Washington & Lee University ",
+            stars: "★★★★★"
+        },
+        {
+            quote: "Louis Newman presented to our team several valuable frameworks for thinking about the work of academic advising: about moving from transactional to transformational relationships with students, about higher education not as the acquisition of a ticket-like credential but as the cultivation of a passport-like menu of capabilities. He also provided us with space and support to do what we needed most to do: converse together about how such frameworks might function practically in real scenarios. We are better advisors for Louis's having visited us, and we hope to welcome him again in the future. ",
+            author: "Meira Kensky",
+            title: "Director of Undergraduate Advising, University of Virginia ",
+            stars: "★★★★★"
+        }
+    ];
+
+    const testimonialWrapper = document.getElementById('testimonial-wrapper');
+    if (testimonialWrapper) {
+        testimonials.forEach(item => {
+            const slide = document.createElement('div');
+            slide.className = 'swiper-slide flex flex-col items-center text-center px-4';
+            
+            slide.innerHTML = `
+                <img src="./assets/quote.svg" alt="quotation mark" aria-hidden="true" class="w-12 h-12 pb-4 object-contain opacity-70" />
+                <p class="mb-6 text-[12px] leading-relaxed text-gray-700 font-medium h-auto">
+                    "${item.quote}"
+                </p>
+                <div class="text-[#f1c40f] mb-3 text-xl tracking-widest">${item.stars}</div>
+                <p class="font-bold text-gray-900 text-xs mb-1">${item.author}</p>
+                <p class="text-[10px] text-gray-500 tracking-wide">${item.title}</p>
+            `;
+            testimonialWrapper.appendChild(slide);
+        });
+
+        const testimonialSwiper = new Swiper(".testimonialSwiper", {
+            autoHeight: true, 
+            slidesPerView: 1,         
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 6000,          
+                disableOnInteraction: true, 
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,      
+            },
+            breakpoints: {
+                768: { slidesPerView: 2, spaceBetween: 40 },
+                1024: { slidesPerView: 3, spaceBetween: 50 },
+            },
+        });
     }
 </script>
 <!-- Swiper JS -->

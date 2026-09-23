@@ -31,7 +31,7 @@
        <!-- Header / Navigation -->
     <header class="navbar bg-[#9FD2E1] flex flex-col md:flex-row justify-between items-center py-4">
         <div class="logo flex items-center gap-2 mb-4 md:mb-0">
-            <a href="index.html" class="w-[clamp(80px,10vw,112px)] h-auto">
+            <a href="index.html" class="w-[clamp(120px,12vw,160px)] h-auto">
                 <img src="./assets/logo.png" alt="Logo">
             </a>
         </div>
@@ -79,7 +79,7 @@
             </div>
         </nav>
         
-        <button class="bg-[#7ca9d6] text-white px-5 py-2.5 rounded-md font-medium text-sm hover:bg-[#6894c0] transition">
+        <button class="bg-[#b38a44] text-white px-5 py-2.5 rounded-md font-medium text-sm hover:bg-[#9a7538] transition">
             Schedule a Consultation
         </button>
     </header>
@@ -133,15 +133,15 @@
         </div>
     </section>
 
-    <!-- Testimonials (Swiper Carousel) -->
+    <!-- Testimonials (Swiper Carousel)
     <section class="max-w-7xl mx-auto px-8 py-8 mb-12 overflow-hidden border-b border-gray-100">
         <div class="swiper testimonialSwiper pb-12"> 
             <div class="swiper-wrapper" id="testimonial-wrapper">
-                <!-- Testimonial slides will be injected here by JavaScript -->
+                
             </div>
             <div class="swiper-pagination"></div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Main Content Split Section -->
     <section class="max-w-7xl mx-auto px-8 py-12 flex flex-col lg:flex-row gap-12 lg:gap-16 mb-16">
@@ -180,9 +180,75 @@
             
         </div>
     </section>
+    <!-- Footer -->
+<footer class="bg-[#9FD2E1] border-t border-white/20 pt-16 pb-8 mt-12">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                
+                <!-- Brand & Bio -->
+                <div class="space-y-4 lg:pr-6">
+                    <a href="index.html" class="block w-[clamp(80px,10vw,112px)] h-auto mb-6">
+                        <img src="./assets/logo.png" alt="Logo">
+                    </a>
+                    <p class="text-white/90 text-[14px] leading-relaxed">
+                        Louis Newman is a College Success Coach, Educational Consultant, and Author of <i>Thinking Critically in College</i>. Dedicated to helping students thrive academically and personally.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold font-['Poppins'] text-white mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-[14px] text-white/90 font-medium">
+                        <li><a href="about.html" class="hover:text-[#b38a44] transition-colors">About Louis</a></li>
+                        <li><a href="what-is-coaching.html" class="hover:text-[#b38a44] transition-colors">What is Coaching?</a></li>
+                        <li><a href="book.html" class="hover:text-[#b38a44] transition-colors">The Book</a></li>
+                        <li><a href="speaking.html" class="hover:text-[#b38a44] transition-colors">Speaking</a></li>
+                        <li><a href="blog.html" class="hover:text-[#b38a44] transition-colors">News & Insights (Blog)</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-bold font-['Poppins'] text-white mb-6">Services</h4>
+                    <ul class="space-y-3 text-[14px] text-white/90 font-medium">
+                        <li><a href="individual-coaching.html" class="hover:text-[#b38a44] transition-colors">Individual Coaching</a></li>
+                        <li><a href="college-readiness-programs.html" class="hover:text-[#b38a44] transition-colors">College Readiness Programs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & CTA -->
+                <div>
+                    <h4 class="text-lg font-bold font-['Poppins'] text-white mb-6">Connect</h4>
+                    <ul class="space-y-3 text-[14px] text-white/90 font-medium mb-6">
+                        <li>
+                            <a href="mailto:coach@thinkingcritically.us" class="flex items-center gap-2 hover:text-[#b38a44] transition-colors break-all">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 shrink-0">
+                                  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                                </svg>
+                                coach@thinkingcritically.us
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="inline-block bg-[#b38a44] text-white px-6 py-2.5 rounded-md font-medium text-sm hover:bg-[#9a7538] transition shadow-sm">
+                        Schedule a Consultation
+                    </a>
+                </div>
+                
+            </div>
+
+            <!-- Bottom Copyright Bar -->
+            <div class="border-t border-white/30 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-white/80 font-medium">
+                <p>&copy; <span id="year"></span> Louis Newman. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="privacy-policy.html" class="hover:text-[#b38a44] transition-colors">Privacy Policy</a>
+                    <a href="terms-of-service.html" class="hover:text-[#b38a44] transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 <!-- JavaScript -->
-<script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();
     function playVideo() {
         const cover = document.getElementById('video-cover');
         const iframe = document.getElementById('youtube-video');
