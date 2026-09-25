@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 .navbar-text{
 
 color: #FFF;
@@ -31,7 +31,7 @@ button{
 }
 p, h2, h3, h4, h5, h6 {
     font-family: 'Host Grotesk', sans-serif;
-=======
+}
 .navbar-text{
 
 color: #FFF;
@@ -53,7 +53,7 @@ height: min-content;
 width: 100%;
 }
 
- body {
+body{
             font-family: 'Host Grotesk', sans-serif;
         }
 h1 {
@@ -61,8 +61,4 @@ h1 {
 }
 button{
     font-family: 'Host Grotesk', sans-serif;
-}
-p, h2, h3, h4, h5, h6 {
-    font-family: 'Host Grotesk', sans-serif;
->>>>>>> origin/main
 }
