@@ -3,7 +3,7 @@
 
 color: #FFF;
 font-family: 'Poppins', sans-serif;
-font-size: 16px;
+font-size: clamp(0.575rem, 0.475rem + 0.42vw, 1rem); 
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -11,17 +11,18 @@ letter-spacing: 1.12px;
 }
 
 .navbar {
-    display: inline-flex;
-padding: 0 32px;
+
 justify-content: center;
 align-items: center;
-gap: 92px;
+gap: calc((92 / 1440) * 100%);
 height: min-content;
-width: 100%;
+
 }
 
- body {
+body {
             font-family: 'Host Grotesk', sans-serif;
+            
+          
         }
 h1 {
             font-family: 'Poppins', sans-serif;
@@ -32,33 +33,58 @@ button{
 p, h2, h3, h4, h5, h6 {
     font-family: 'Host Grotesk', sans-serif;
 }
-.navbar-text{
-
-color: #FFF;
-font-family: 'Poppins', sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 1.12px;
+html {
+    overflow-x: hidden;
 }
 
-.navbar {
-    display: inline-flex;
-padding: 0 32px;
-justify-content: center;
-align-items: center;
-gap: 92px;
-height: min-content;
-width: 100%;
+
+/* Base styles (Mobile First - scales down below 768px) */
+.btn-primary {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
 }
 
-body{
-            font-family: 'Host Grotesk', sans-serif;
-        }
-h1 {
-            font-family: 'Poppins', sans-serif;
+.card-heading {
+    font-size: 1.25rem;
+    line-height: 1.75;
 }
-button{
-    font-family: 'Host Grotesk', sans-serif;
+
+.nav-links {
+    gap: 1rem;
+}
+
+.main-body-text {
+    font-size: 0.875rem;
+}
+
+/* Medium screens (Tablet - 768px and up) */
+@media (min-width: 768px) {
+    .btn-primary {
+        padding: 0.75rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .card-heading {
+        font-size: 1.5rem;
+    }
+    
+    .nav-links {
+        gap: 1.5rem;
+    }
+}
+
+/* Large screens (Desktop - 1024px and up) */
+@media (min-width: 1024px) {
+    .card-heading {
+        font-size: 1.875rem;
+    }
+    
+    .nav-links {
+        gap: 3rem;
+    }
+    
+    .main-body-text {
+        font-size: 0.9375rem; /* Equivalent to 15px */
+    }
+    
 }
