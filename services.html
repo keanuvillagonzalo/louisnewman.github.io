@@ -17,40 +17,56 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #000;
   font-family: 'Poppins', sans-serif;
-  font-size: clamp(1.5rem, 2.8vw, 2.5rem);
+  font-size: clamp(1.3rem, 2.8vw, 2.5rem);
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
   letter-spacing: 2px;
   z-index: 13;
-  padding-left: 0.3em;
+  
 }
     </style>
 </head>
 <body class="bg-white text-gray-800">
 
-       <!-- Header / Navigation -->
-    <header class="navbar bg-[#9FD2E1] flex flex-col md:flex-row justify-between items-center py-4 xl:px-16">
-        <div class="logo flex items-center gap-2 mb-4 md:mb-0">
+     <!-- Header / Navigation -->
+<header class="navbar bg-[#9FD2E1] flex flex-wrap justify-between items-center py-4 px-8 xl:px-16 z-50 relative">
+    
+    <!-- Logo & Hamburger Wrapper -->
+    <div class="flex justify-between items-center w-full md:w-auto">
+        <div class="logo flex items-center gap-2">
             <a href="index.html" class="w-[clamp(120px,12vw,160px)] h-auto">
                 <img src="./assets/logo.png" alt="Logo">
             </a>
         </div>
         
-        <nav class="flex justify-center items-center gap-6 md:gap-12 text-white text-sm font-semibold mb-4 md:mb-0">
+        <!-- Hamburger Button (Mobile Only) -->
+        <button id="hamburger-btn" class="md:hidden text-white hover:text-gray-200 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-8 h-8">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </button>
+    </div>
+    
+    <!-- Navigation & CTA Container -->
+    <div id="mobile-menu" class="hidden w-full md:flex md:w-auto md:flex-1 md:items-center flex-col md:flex-row mt-6 md:mt-0 pb-4 md:pb-0">
+        
+        <!-- Links -->
+        <nav class="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-4 lg:gap-12 text-white text-sm font-semibold mb-6 md:mb-0 md:mx-auto w-full md:w-auto">
             <a href="about.html" class="navbar-text hover:text-gray-200 transition">About</a>
             <a href="what-is-coaching.html" class="navbar-text hover:text-gray-200 transition">What is Coaching?</a>
             
             <!-- Services Dropdown Container -->
-            <div class="relative group">
-                <a href="services.html" class="navbar-text hover:text-gray-200 transition flex items-center gap-1 py-2">
+            <div class="relative group w-full md:w-auto text-center font-['Host_Grotesk',_sans-serif]">
+                <a href="services.html" class="navbar-text hover:text-gray-200 transition flex items-center justify-center gap-1 py-2">
                     Services
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="w-3 h-3 mt-0.5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                     </svg>
                 </a>
                 
-                <div class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 top-full w-56 bg-white rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 flex flex-col overflow-hidden border border-gray-100">
+                <!-- Dropdown Menu -->
+                <div class="hidden md:absolute static md:left-1/2 md:-translate-x-1/2 top-full w-full md:w-56 bg-white md:rounded-md shadow-none md:shadow-xl md:opacity-0 md:invisible group-hover:flex md:group-hover:opacity-100 md:group-hover:visible transition-all duration-200 z-50 flex-col overflow-hidden border border-gray-100 mt-2 md:mt-0">
                     <a href="individual-coaching.html" class="block px-5 py-3 text-sm text-gray-700 font-medium hover:bg-gray-50 hover:text-[#1c7ced] transition-colors border-b border-gray-100">
                         Individual Coaching
                     </a>
@@ -66,29 +82,28 @@
             <a href="blog.html" class="navbar-text hover:text-gray-200 transition">Blog</a>
         </nav>
         
-        <button class="navbar-text  bg-[#b38a44] text-white md:px-0 md:py-2 lg:px-2.5 lg:py-2 xl:px-8 xl:py-4 rounded-md font-medium  hover:bg-[#9a7538] transition">
+        <!-- CTA Button -->
+        <button class="navbar-text bg-[#b38a44] text-white md:px-0 md:py-2 lg:px-2.5 lg:py-2 xl:px-8 xl:py-4 rounded-md font-medium hover:bg-[#9a7538] transition invisible lg:visible w-full md:w-auto">
             Schedule a Consultation
         </button>
-    </header>
+    </div>
+</header>
 
     <!-- Hero Section -->
-    <section class="max-w-7xl mx-auto px-8 py-16 md:py-24 flex flex-col lg:flex-row items-center gap-16 relative">
-        <div class="flex-1  z-10 relative">
+    <section class="max-w-7xl mx-auto px-8 py-16 md:py-24 flex flex-row lg:flex-row items-center gap-16 relative w-[85%]">
+        <div class="flex-1 z-10 relative">
             
             <h1 class="services-title relative">
-                <span class="relative z-20">College can be</span><br>
-                <span class="relative z-20">challenging. It</span><br>
-                <span class="relative z-20">doesn't have to</span><br>
-                <span class="relative z-20">feel overwhelming</span>
+                <span class="relative z-20 ">College is challenging</span>
             </h1>
             
-            <p class="text-gray-800 text-lg font-medium pt-4 relative z-20 pl-2.5 w-full md:w-[90%] leading-relaxed">
+            <p class="text-black text-[12px] leading-tight lg:text-base lg:leading-normal font-medium pt-4 relative z-20 w-[80%]">
                 College students face a wide range of challenges — academic, social, and emotional. Those challenges are mostly unavoidable, but students don't need to face them alone.
             </p>
             
-            <div class="flex flex-wrap gap-4 pt-4 relative z-20 pl-2.5">
-                <button class="bg-[#b38a44] text-white px-6 py-3 rounded-md font-medium hover:bg-[#9a7538] transition">Schedule a Consultation</button>
-                <button class="bg-[#b38a44] text-white px-6 py-3 rounded-md font-medium hover:bg-[#9a7538] transition">Schedule a Consultation</button>
+            <div class="flex flex-wrap gap-4 pt-4 relative z-20 ">
+                <button class="bg-[#b38a44] text-white xl:px-6 xl:py-3 md:px-4 md:py-2 rounded-md font-medium hover:bg-[#9a7538] transition text-sm">Schedule a Consultation</button>
+                <button class="bg-[#b38a44] text-white xl:px-6 xl:py-3 md:px-4 md:py-2 rounded-md font-medium hover:bg-[#9a7538] transition text-sm">Schedule a Consultation</button>
             </div>
         </div>
 
@@ -132,10 +147,10 @@
     </section> -->
 
     <!-- Main Content Split Section -->
-    <section class="max-w-7xl mx-auto px-8 py-12 flex flex-col lg:flex-row gap-12 lg:gap-16 mb-16">
+    <section class="max-w-7xl mx-auto px-8 py-12 flex flex-col lg:flex-row gap-12 lg:gap-16 mb-16 w-[85%]">
         
         <!-- Left Text Content -->
-        <div class="flex-1 text-gray-800 text-[15px] space-y-6 leading-relaxed md:pr-8">
+        <div class="flex-1 text-gray-800 text-sm space-y-6 leading-relaxed md:pr-8">
             <h2 class="text-2xl md:text-3xl font-bold  mb-6 text-black">Find the Right Support for Your Student</h2>
             <p>Every student's journey is unique, and so are the hurdles they face. Whether they need a strong foundation before freshman year begins or ongoing 1-on-1 support to navigate current challenges, explore the resources and programs designed to help them turn their college experience around.</p>
             <p>You don't have to have all the answers right now. Taking the time to understand how a dedicated coach can partner with your student is the first step toward helping them build resilience and rediscover their confidence.</p>
@@ -143,7 +158,7 @@
         </div>
 
         <!-- Right Blue Cards (2x2 Grid) -->
-        <div class="w-full lg:w-[600px] grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="w-full lg:w-[400px] xl:w-[600px] md:h-[fit-content] grid grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 gap-6">
             
             <!-- Card 1 -->
             <div class="bg-[#41a2f3] text-white p-8 rounded-xl shadow-lg flex flex-col justify-between">
@@ -345,6 +360,27 @@
             },
         },
     });
+</script>
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    
+    // Hamburger Menu Toggle
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (hamburgerBtn && mobileMenu) {
+        hamburgerBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        });
+    }
+
+    function playVideo() {
+        const cover = document.getElementById('video-cover');
+        const iframe = document.getElementById('youtube-video');
+        iframe.src = "https://www.youtube.com/embed/pf3X0yA1hpc?autoplay=1&mute";
+        cover.style.display = 'none';
+    }
 </script>
 </body>
 </html>
