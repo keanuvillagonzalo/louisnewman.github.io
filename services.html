@@ -90,7 +90,7 @@
 </header>
 
     <!-- Hero Section -->
-    <section class="max-w-7xl mx-auto px-8 py-16 md:py-24 flex flex-row lg:flex-row items-center gap-16 relative w-[85%]">
+    <section class="max-w-7xl mx-auto px-8 py-16 md:py-24 flex flex-col md:flex-row items-center gap-16 relative w-[85%]">
         <div class="flex-1 z-10 relative">
             
             <h1 class="services-title relative">
@@ -102,9 +102,8 @@
             </p>
             
             <div class="flex flex-wrap gap-4 pt-4 relative z-20 ">
-                <button class="bg-[#b38a44] text-white xl:px-6 xl:py-3 md:px-4 md:py-2 rounded-md font-medium hover:bg-[#9a7538] transition text-sm font-['Host_Grotesk']">Schedule a Consultation</button>
-                <button class="bg-[#b38a44] text-white xl:px-6 xl:py-3 md:px-4 md:py-2 rounded-md font-medium hover:bg-[#9a7538] transition text-sm font-['Host_Grotesk']">Schedule a Consultation</button>
-            </div>
+                <button class="bg-[#b38a44] text-white px-5 py-2.5 xl:px-6 xl:py-3 md:px-4 md:py-2 rounded-md font-medium hover:bg-[#9a7538] transition text-sm font-['Host_Grotesk']">Schedule a Consultation</button>
+                   </div>
         </div>
 
         <div class="flex-1 relative w-full flex justify-center lg:justify-end z-10">
@@ -151,52 +150,52 @@
         
         <!-- Left Text Content -->
         <div class="flex-1 text-gray-800 text-sm space-y-6 leading-relaxed md:pr-8">
-            <h2 class="text-2xl md:text-3xl font-bold  mb-6 text-black">Find the Right Support for Your Student</h2>
+            <h2 class="text-2xl md:text-1.5xl font-bold  mb-6 text-black">Find the Right Support for Your Student</h2>
             <p>Every student's journey is unique, and so are the hurdles they face. Whether they need a strong foundation before freshman year begins or ongoing 1-on-1 support to navigate current challenges, explore the resources and programs designed to help them turn their college experience around.</p>
             <p>You don't have to have all the answers right now. Taking the time to understand how a dedicated coach can partner with your student is the first step toward helping them build resilience and rediscover their confidence.</p>
             <p>Start by learning about my relationship-first coaching philosophy, or dive straight into the individual programs to find the perfect fit for your family's needs.</p>
         </div>
 
-        <!-- Right Blue Cards (2x2 Grid) -->
-        <div class="w-full lg:w-[400px] xl:w-[600px] md:h-[fit-content] grid grid-cols-1 lg:grid-cols-1 xl:grid-cols-2 gap-6">
-            
-            <!-- Card 1 -->
-            <div class="bg-[#41a2f3] text-white p-8 rounded-xl shadow-lg flex flex-col justify-between">
-                <div>
-                    <h3 class="text-2xl font-medium mb-3">What is a College Success Coach?</h3>
-                    <p class="mb-6 opacity-90 text-[13px] leading-relaxed">Learn what I do and how coaching can support your college student.</p>
-                </div>
-                <a href="#" class="inline-block border-b border-white pb-0.5 text-sm font-medium hover:opacity-80 transition w-max">Learn more &rarr;</a>
-            </div>
-            
-            <!-- Card 2 -->
-            <div class="bg-[#3091e6] text-white p-8 rounded-xl shadow-lg flex flex-col justify-between">
-                <div>
-                    <h3 class="text-2xl font-medium mb-3">My Coaching Philosophy</h3>
-                    <p class="mb-6 opacity-90 text-[13px] leading-relaxed">Trust comes before technique. Why every engagement starts with the relationship, not the diagnosis.</p>
-                </div>
-                <a href="#" class="inline-block border-b border-white pb-0.5 text-sm font-medium hover:opacity-80 transition w-max">Read the philosophy &rarr;</a>
-            </div>
-            
-            <!-- Card 3 -->
-            <div class="bg-[#41a2f3] text-white p-8 rounded-xl shadow-lg flex flex-col justify-between">
-                <div>
-                    <h3 class="text-2xl font-medium mb-3">Individual Coaching</h3>
-                    <p class="mb-6 opacity-90 text-[13px] leading-relaxed">Ongoing, semester-long or annual support — unlimited access built around your student's needs.</p>
-                </div>
-                <a href="#" class="inline-block border-b border-white pb-0.5 text-sm font-medium hover:opacity-80 transition w-max">See how it works &rarr;</a>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="bg-[#3091e6] text-white p-8 rounded-xl shadow-lg flex flex-col justify-between">
-                <div>
-                    <h3 class="text-2xl font-medium mb-3">College Readiness Programs</h3>
-                    <p class="mb-6 opacity-90 text-[13px] leading-relaxed">Transitioning to college can be rocky. Make sure your student gets off to a strong start.</p>
-                </div>
-                <a href="#" class="inline-block border-b border-white pb-0.5 text-sm font-medium hover:opacity-80 transition w-max">Explore programs &rarr;</a>
-            </div>
-
+        <!-- Right Blue Cards (Flex Column) -->
+<div class="w-full lg:w-[400px] xl:w-[600px] h-fit flex flex-col gap-6">
+    
+    <!-- Card 1 -->
+    <div class="bg-[#41a2f3] text-white p-8 rounded-xl shadow-lg flex flex-col justify-between">
+        <div>
+            <h3 class="text-2xl font-medium mb-3">What is a College Success Coach?</h3>
+            <p class="mb-6 opacity-90 text-[13px] leading-relaxed">Learn what I do and how coaching can support your college student.</p>
         </div>
+        <a href="what-is-coaching.html" class="inline-block border-b border-white pb-0.5 text-sm font-medium hover:opacity-80 transition w-max">Learn more &rarr;</a>
+    </div>
+    
+    <!-- Card 2 -->
+    <div class="bg-[#3091e6] text-white p-8 rounded-xl shadow-lg flex flex-col justify-between">
+        <div>
+            <h3 class="text-2xl font-medium mb-3">My Coaching Philosophy</h3>
+            <p class="mb-6 opacity-90 text-[13px] leading-relaxed">Trust comes before technique. Why every engagement starts with the relationship, not the diagnosis.</p>
+        </div>
+        <a href="what-is-coaching.html" class="inline-block border-b border-white pb-0.5 text-sm font-medium hover:opacity-80 transition w-max">Read the philosophy &rarr;</a>
+    </div>
+    
+    <!-- Card 3 -->
+    <div class="bg-[#41a2f3] text-white p-8 rounded-xl shadow-lg flex flex-col justify-between">
+        <div>
+            <h3 class="text-2xl font-medium mb-3">Individual Coaching</h3>
+            <p class="mb-6 opacity-90 text-[13px] leading-relaxed">Ongoing, semester-long or annual support — unlimited access built around your student's needs.</p>
+        </div>
+        <a href="individual-coaching.html" class="inline-block border-b border-white pb-0.5 text-sm font-medium hover:opacity-80 transition w-max">See how it works &rarr;</a>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="bg-[#3091e6] text-white p-8 rounded-xl shadow-lg flex flex-col justify-between">
+        <div>
+            <h3 class="text-2xl font-medium mb-3">College Readiness Programs</h3>
+            <p class="mb-6 opacity-90 text-[13px] leading-relaxed">Transitioning to college can be rocky. Make sure your student gets off to a strong start.</p>
+        </div>
+        <a href="college-readiness-programs.html" class="inline-block border-b border-white pb-0.5 text-sm font-medium hover:opacity-80 transition w-max">Explore programs &rarr;</a>
+    </div>
+
+</div>
     </section>
     <!-- Footer -->
 <footer class="bg-[#9FD2E1] border-t border-white/20 pt-16 pb-8 mt-12 font-semibold">

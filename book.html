@@ -88,7 +88,7 @@
 </header>
 
     <!-- Hero Section -->
-    <section class="max-w-7xl mx-auto px-8 py-16 md:py-24 flex flex-row lg:flex-row items-center gap-16 relative w-[95%] ">
+    <section class="max-w-7xl mx-auto px-8 py-16 md:py-24 flex flex-col lg:flex-row items-center gap-16 relative w-[95%] ">
         <div class="flex-1  z-10 relative">
             
             <h1 class="book-title relative">
@@ -177,7 +177,38 @@
         </div>
     </section>
 
-    
+    <section class="max-w-7xl mx-auto px-8 py-6 md:py-8 relative z-20">
+    <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.04)] p-6 md:px-10 md:py-8 border border-gray-100 flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-10">
+        
+        <!-- Quote icon (Hidden on mobile to save space) -->
+        <div class="hidden md:block shrink-0 mt-1">
+            <img src="./assets/quote.svg" alt="quotation mark" aria-hidden="true" class="w-10 h-10 object-contain opacity-20" />
+        </div>
+
+        <!-- Review Quote -->
+        <div class="flex-1 text-center md:text-left">
+            <!-- Mobile Stars -->
+            <div class="text-[#f1c40f] mb-3 text-lg tracking-widest md:hidden">★★★★★</div> 
+            
+            <p class="text-base md:text-md text-gray-800 font-medium leading-relaxed">
+                "No other ‘how-to-do-college’ book takes a deep dive into what it takes for college students to thrive academically and cultivate the habits of an educated mind. Newman offers a treasure trove of helpful examples to illustrate how undergraduates need to think and what they should do to effectively meet the learning challenges they will encounter during and after college.",
+            </p>
+        </div>
+        
+        <!-- Vertical Divider (Desktop Only) -->
+        <div class="hidden md:block w-px self-stretch bg-gray-100"></div>
+
+        <!-- Author Details -->
+        <div class="shrink-0 text-center md:text-left w-full md:w-[250px]">
+            <!-- Desktop Stars -->
+            <div class="text-[#f1c40f] mb-2 text-lg tracking-widest hidden md:block">★★★★★</div> 
+            
+            <p class="font-bold text-gray-900 text-base md:text-lg mb-1">George D. Kuh</p>
+            <p class="text-gray-600 text-sm">Chancellor’s Professor Emeritus of Higher Education, Indiana University,</p>
+        </div>
+
+    </div>
+</section>
 
     <!-- "Teaching students..." Intro Section -->
     <section class="max-w-7xl mx-auto px-8 py-8 text-sm leading-relaxed text-gray-800 space-y-6">
@@ -223,7 +254,7 @@
                     
                     <div class="pt-6 flex flex-col items-start gap-4">
                         <p class="text-sm text-gray-800 font-medium">Order your copy of <em>Thinking Critically in College</em> now through</p>
-                        <button class="bg-[#b38a44] font-['Host_Grotesk'] text-white px-12 py-3 rounded-full font-medium hover:bg-[#9a7538] transition w-max shadow-md">Purchase Now</button>
+                        <button onClick="window.open('https://thinkingcritically.us/', '_blank')" class="bg-[#b38a44] font-['Host_Grotesk'] text-white px-12 py-3 rounded-full font-medium hover:bg-[#9a7538] transition w-max shadow-md">Purchase Now</button>
                     </div>
                 </div>
 

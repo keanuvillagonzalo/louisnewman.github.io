@@ -29,7 +29,7 @@
 
     </style>
 </head>
-<body class="bg-[#F2EFE7] text-gray-800">
+<body class="bg-[#F9F4E5] text-gray-800">
 
    <!-- Header / Navigation -->
 <header class="navbar bg-[#9FD2E1] flex flex-wrap justify-between items-center py-4 px-8 xl:px-16 z-50 relative">
@@ -209,10 +209,10 @@
 -->
 
 <!-- Main Content Split Section -->
-<section class="max-w-7xl mx-auto px-8  flex w-[85%]">
+<section class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row gap-10 xl:gap-16 w-full lg:w-[85%] pb-16">
     
-    <!-- Text Content -->
-    <div class="flex-1 text-gray-800 text-sm space-y-6 leading-relaxed ">
+    <!-- Text Content (Order 2 on mobile, Order 1 on desktop) -->
+    <div class="flex-1 order-2 md:order-1 text-black text-sm space-y-6 leading-relaxed">
         <h2 style="font-size: 1.2rem;"><strong>Louis Newman is the former Dean of Academic Advising and Associate Vice Provost for Undergraduate Education at Stanford University. He is also a professor emeritus of religious studies at Carleton College, where he taught and advised students for 33 years.</strong></h2> 
         <p>Throughout my career—as a college professor, adviser and administrator—my goal has been to help college students thrive. I know from experience that every student, given the proper support, can transition smoothly to college and use these years to grow intellectually and personally.</p>
         
@@ -237,15 +237,38 @@
 
         <p>You can find more information about my academic background <a href="#" class="text-[#1c7ced] font-medium hover:underline transition">here</a>.</p>
         <p class="font-medium text-gray-500 mt-3">
-                Schedule a free, no obligation, consultation to see if College Success Coaching is right for your student.
+            Schedule a free, no obligation, consultation to see if College Success Coaching is right for your student.
         </p>      
         <div class="pt-2">
             <a href="#" class="inline-block bg-[#b38a44] text-white xl:px-6 xl:py-3 md:px-4 md:py-2 rounded-md font-medium hover:bg-[#9a7538] transition text-sm font-['Host_Grotesk']">
                 Schedule a Consultation
             </a>
-            
         </div>
     </div>    
+
+    <!-- Testimonial Block (Order 1 on mobile, Order 2 on desktop) -->
+    <div class="w-full md:w-[320px] lg:w-[350px] shrink-0 order-1 md:order-2">
+        <!-- Sticky utility applied so the testimonial floats as the user reads the bio -->
+        <div class="bg-white rounded-2xl shadow-[0_4px_20px_rgb(0,0,0,0.04)] p-8 border border-gray-100 flex flex-col items-center text-center gap-5 md:sticky md:top-24">
+            
+            <!-- Quote icon -->
+            <img src="./assets/quote.svg" alt="quotation mark" aria-hidden="true" class="w-10 h-10 object-contain opacity-20" />
+            
+            <!-- Stars -->
+            <div class="text-[#f1c40f] text-xl tracking-widest">★★★★★</div> 
+            
+            <!-- Review Quote -->
+            <p class="text-base text-gray-800 font-medium leading-relaxed ">
+                "With Louis, I can see what it means to put moral ideals into practice. . .what it means to be an advisor and teacher and moral guide."
+            </p>
+            
+            <!-- Divider -->
+            <div class="w-12 h-px bg-gray-200"></div>
+
+            <!-- Author Details -->
+            <p class="font-bold text-black text-lg">Geoffrey C</p>
+        </div>
+    </div>
 </section>
 <!-- Footer -->
 <footer class="bg-[#9FD2E1] border-t border-white/20 pt-16 pb-8 mt-12 font-semibold">

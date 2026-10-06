@@ -19,9 +19,7 @@ height: min-content;
 
 }
 
-@theme{
-    font-host: 'Host Grotesk', sans-serif;
-}
+
 
 body {
             font-family: 'Baskervville', serif;
