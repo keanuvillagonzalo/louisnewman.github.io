@@ -1,0 +1,89 @@
+/* Blog search. Uses the design tokens from index.css. */
+.blog-search {
+  max-width: 36rem;
+  margin: 0 auto 2.5rem;
+}
+
+.blog-search__field {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.blog-search__icon {
+  position: absolute;
+  left: 1rem;
+  width: 1.15rem;
+  height: 1.15rem;
+  color: var(--ink-soft);
+  pointer-events: none;
+}
+
+.blog-search__input {
+  width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  padding: 0.8rem 2.75rem 0.8rem 2.9rem;
+  color: var(--ink);
+  background: #fff;
+  border: 1.5px solid #6f8197;
+  border-radius: 999px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.blog-search__input::placeholder { color: var(--ink-soft); opacity: 1; }
+
+.blog-search__input:focus-visible {
+  outline: 3px solid var(--focus, var(--red));
+  outline-offset: 2px;
+  border-color: var(--navy);
+}
+
+/* Hide the browser's built-in clear "x" so there's just our button. */
+.blog-search__input::-webkit-search-cancel-button { -webkit-appearance: none; }
+
+.blog-search__clear {
+  position: absolute;
+  right: 0.5rem;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: var(--ink-soft);
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.blog-search__clear[hidden] { display: none; }
+.blog-search__clear:hover { background: rgba(20, 35, 63, 0.08); color: var(--navy); }
+.blog-search__clear:focus-visible { outline: 3px solid var(--focus, var(--red)); outline-offset: 1px; }
+
+.blog-search__status {
+  margin: 0.6rem 0 0;
+  min-height: 1.4em;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
+.blog-search__empty {
+  text-align: center;
+  padding: 2rem 0 3rem;
+  color: var(--ink-soft);
+}
+.blog-search__empty[hidden], #blog-search-results[hidden] { display: none; }
+
+/* Highlighted matches */
+.blog-card mark {
+  background: #fde9a8;
+  color: inherit;
+  padding: 0 0.1em;
+  border-radius: 2px;
+}

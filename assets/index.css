@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&display=swap');
+.navbar-text{
+
+color: #FFF;
+font-family: 'Poppins', sans-serif;
+font-size: clamp(0.475rem, 0.375rem + 0.42vw, 1rem); 
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.12px;
+}
+
+.navbar {
+
+justify-content: center;
+align-items: center;
+gap: calc((92 / 1440) * 100%);
+height: min-content;
+
+}
+
+
+
+body {
+            font-family: 'Baskervville', serif;
+            
+          
+        }
+h1 {
+            font-family: 'Poppins', sans-serif;
+}
+button{
+    font-family: 'Host Grotesk', sans-serif;
+}
+h2, h3, h4, h5, h6 {
+    font-family: 'Host Grotesk', sans-serif;
+}
+html {
+    overflow-x: hidden;
+}
+
+p{
+    font-size: 1rem;
+}
+
