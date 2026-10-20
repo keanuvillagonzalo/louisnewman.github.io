@@ -239,6 +239,36 @@
       </div>
     </section>
 
+    <section class="section section--tint contact newsletter" id="newsletter" aria-labelledby="newsletter-title">
+      <div class="container split">
+        <div class="contact__intro reveal">
+          <p class="eyebrow">Newman Notes</p>
+          <h2 id="newsletter-title">Get new articles in your inbox</h2>
+          <p class="lede">Practical advice on college readiness, critical thinking, and helping your student thrive. No spam, and you can unsubscribe at any time.</p>
+        </div>
+
+        <!-- TODO: set action to your email service's signup endpoint (Mailchimp, Kit, MailerLite, etc.).
+             Until then the form has nowhere to send addresses. -->
+        <form class="contact-form reveal" action="#" method="post">
+          <div class="field">
+            <label for="newsletter-name">First name</label>
+            <input id="newsletter-name" name="first_name" type="text" autocomplete="given-name">
+          </div>
+          <div class="field">
+            <label for="newsletter-email">Email address <span class="field__req" aria-hidden="true">*</span></label>
+            <input id="newsletter-email" name="email" type="email" autocomplete="email" required aria-required="true" placeholder="you@example.com">
+          </div>
+          <!-- Spam trap: real visitors never see or fill this. -->
+          <div class="visually-hidden" aria-hidden="true">
+            <label for="newsletter-website">Leave this field empty</label>
+            <input id="newsletter-website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+          <button class="button" type="submit">Sign Up for the Newsletter</button>
+          <p class="contact-form__note">By signing up you agree to the <a href="privacy-policy.html">Privacy Policy</a>.</p>
+        </form>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">

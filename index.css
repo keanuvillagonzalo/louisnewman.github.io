@@ -893,11 +893,7 @@ h1, h2, h3 {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  filter: grayscale(1);
-  opacity: 0.8;
-  transition: filter 0.25s ease, opacity 0.25s ease;
 }
-.logo-list li:hover img { filter: none; opacity: 1; }
 
 .marquee { overflow: hidden; }
 
@@ -988,7 +984,7 @@ h1, h2, h3 {
 .carousel__btn:active { transform: scale(0.96); }
 
 @media (min-width: 760px) {
-  .carousel { --per: 2; --gap: 48px; }
+  .carousel { --per: 1; --gap: 48px; }
 }
 
 @media (min-width: 900px) {
@@ -1351,3 +1347,63 @@ h1, h2, h3 {
 @media (min-width: 640px) {
   .contact-form__alt .button { width: auto; }
 }
+
+/* ==========================================================================
+   Academic background page. Tokens only. Reuses .hero, .media-frame, .section,
+   .section-head, .split, .prose, .need-list, .band-note and .cta-band.
+   ========================================================================== */
+
+/* Eyebrow inside .section-head keeps its own size and colour; on a dark band it uses the sky tint */
+.section-head .eyebrow { font-size: 0.8125rem; color: var(--red); }
+.section--dark .section-head p:not(.eyebrow) { color: var(--on-dark); }
+.section--dark .section-head .eyebrow { color: var(--sky); }
+
+/* Links set inside running text */
+.inline-link { color: var(--navy); font-weight: 600; text-underline-offset: 4px; transition: color 0.2s ease; }
+.inline-link:hover { color: var(--red); }
+
+/* The shorter bio, set apart as a card */
+.short-bio {
+  max-width: none;
+  padding: clamp(24px, 4vw, 40px);
+  background: var(--tint);
+  border-top: 3px solid var(--sky);
+  border-radius: var(--radius);
+}
+.short-bio p { max-width: 40rem; }
+
+/* ==========================================================================
+   Larger paragraph text, site-wide. Kept in one block at the end so it is easy
+   to tune or remove. Small uppercase labels (eyebrows, tags, dates) are left
+   alone on purpose. Body text goes from 17px to 19px; the rest scale with it.
+   ========================================================================== */
+
+body { font-size: 1.1875rem; }
+
+.lede { font-size: clamp(1.1875rem, 1.6vw, 1.3125rem); }
+
+.prose,
+.why__copy,
+.section-head p,
+.cta-band p { font-size: 1.25rem; }
+
+.cta-band .cta-band__note { font-size: 1.0625rem; }
+
+.testimonial__quote p { font-size: clamp(1.375rem, 2.4vw, 1.625rem); }
+.testimonial__quote--long p { font-size: clamp(1.25rem, 2vw, 1.4375rem); }
+
+.carousel blockquote p { font-size: 1.1875rem; }
+.carousel__role { font-size: 1rem; }
+
+.site-footer { font-size: 1.0625rem; }
+.site-footer__legal { font-size: 0.9375rem; }
+
+.contact__direct { font-size: 1.0625rem; }
+.contact-form__note,
+.contact-form__alt { font-size: 1rem; }
+.blog-card__meta,
+.article__meta { font-size: 0.9375rem; }
+.load-more__status { font-size: 1rem; }
+
+/* ---------- Centered navbar ---------- */
+.site-nav__list { justify-content: center; }

@@ -149,7 +149,7 @@
       var dot = document.createElement('button');
       dot.type = 'button';
       dot.className = 'carousel__dot';
-      dot.setAttribute('aria-label', 'Show testimonials ' + (index + 1) + ' of ' + total);
+      dot.setAttribute('aria-label', 'Show slide ' + (index + 1) + ' of ' + total);
       dot.addEventListener('click', function () {
         setAutoplay(false);
         goTo(index);
@@ -162,7 +162,7 @@
       if (!autoplay || !inView || timer) return;
       timer = setInterval(function () {
         goTo(currentPage() + 1);
-      }, 6000);
+      }, 4000);
     }
 
     function stopTimer() {
