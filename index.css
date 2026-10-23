@@ -34,7 +34,7 @@ html { -webkit-text-size-adjust: 100%; }
 
 body {
   margin: 0;
-  background: #fff;
+  background: #F9F4E5;
   color: var(--ink);
   font-family: var(--sans);
   font-size: 1.0625rem;
@@ -863,7 +863,7 @@ h1, h2, h3 {
 .js .posts:not(.is-expanded) > [data-extra] { display: none; }
 
 /* ---------- Logos ---------- */
-.section--logos { border-top: 1px solid var(--rule); }
+.section--logos { border-top: 1px solid var(--rule); background-color: #fff; }
 .logo-wall { display: grid; gap: 48px; }
 .logo-group { display: grid; gap: 16px; }
 .logo-group__toggle { justify-self: start; }
