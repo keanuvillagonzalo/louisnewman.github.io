@@ -248,25 +248,37 @@
           <p class="lede">Practical advice on college readiness, critical thinking, and helping your student thrive. No spam, and you can unsubscribe at any time.</p>
         </div>
 
-        <!-- TODO: set action to your email service's signup endpoint (Mailchimp, Kit, MailerLite, etc.).
-             Until then the form has nowhere to send addresses. -->
-        <form class="contact-form reveal" action="#" method="post">
+       <!--
+          HubSpot collects this form automatically through the tracking code in <head>
+          (same setup as the contact form). The hidden "newsletter_signup" field lets you
+          filter these contacts in HubSpot.
+        -->
+        <form class="contact-form reveal" id="newsletter-form" action="#" method="post">
           <div class="field">
             <label for="newsletter-name">First name</label>
-            <input id="newsletter-name" name="first_name" type="text" autocomplete="given-name">
+            <input id="newsletter-name" name="firstname" type="text" autocomplete="given-name">
           </div>
           <div class="field">
             <label for="newsletter-email">Email address <span class="field__req" aria-hidden="true">*</span></label>
             <input id="newsletter-email" name="email" type="email" autocomplete="email" required aria-required="true" placeholder="you@example.com">
           </div>
-          <!-- Spam trap: real visitors never see or fill this. -->
+
+          <!-- Marks these contacts as newsletter subscribers in HubSpot -->
+          <input type="hidden" name="newsletter_signup" value="Yes">
+
+          <!-- Spam trap: real visitors never see or fill this. HubSpot ignores it. -->
           <div class="visually-hidden" aria-hidden="true">
-            <label for="newsletter-website">Leave this field empty</label>
-            <input id="newsletter-website" name="website" type="text" tabindex="-1" autocomplete="off">
+            <label for="newsletter-gotcha">Leave this field empty</label>
+            <input id="newsletter-gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off" data-hs-do-not-collect="true">
           </div>
+
+          <p class="contact__status" id="newsletter-status" role="status" aria-live="polite" tabindex="-1" hidden></p>
+
           <button class="button" type="submit">Sign Up for the Newsletter</button>
           <p class="contact-form__note">By signing up you agree to the <a href="privacy-policy.html">Privacy Policy</a>.</p>
         </form>
+
+        
       </div>
     </section>
 
@@ -313,6 +325,48 @@
   </footer>
 
   <!-- Must load before site.js so it can snapshot all cards before pagination hides any. -->
+   <script>
+        (function () {
+          var form = document.getElementById('newsletter-form');
+          var status = document.getElementById('newsletter-status');
+          if (!form) return;
+
+          form.addEventListener('submit', function (e) {
+            // Bots: pretend it worked, send nothing.
+            if (form.elements['_gotcha'].value) {
+              
+              e.stopImmediatePropagation();
+              showThanks();
+              return;
+            }
+
+            // Stay on the page (the event still reaches HubSpot's tracking code).
+            e.preventDefault();
+
+            // Backup: also tell HubSpot who this visitor is.
+            var _hsq = window._hsq = window._hsq || [];
+            _hsq.push(['identify', {
+              email: form.elements['email'].value.trim(),
+              firstname: form.elements['firstname'].value.trim()
+            }]);
+            _hsq.push(['trackPageView']);
+
+            // Google Analytics: record the signup (if GA is on the page).
+            if (typeof window.gtag === 'function') window.gtag('event', 'sign_up', { method: 'newsletter' });
+
+            // Give HubSpot a moment to send its request before we reset the form.
+            setTimeout(showThanks, 400);
+          }, true);
+
+          function showThanks() {
+            form.reset();
+            status.hidden = false;
+            status.className = 'contact__status contact__status--ok';
+            status.textContent = 'Thank you for subscribing! Watch your inbox for the next issue.';
+            status.focus();
+          }
+        })();
+        </script>
   <script src="blog-search.js" defer></script>
   <script src="site.js" defer></script>
 <!-- Start of HubSpot Embed Code -->
